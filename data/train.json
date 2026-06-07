@@ -1,0 +1,6342 @@
+[
+  {
+    "sample_id": "SMP0262",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD645978",
+      "products": [
+        "bread",
+        "apples"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD645978.",
+    "target_text": "I can help with return item for order ORD645978.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0339",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD354604",
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD354604.",
+    "target_text": "I can help with return item for order ORD354604.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0218",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD482838",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "potatoes",
+        "toothpaste"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD482838.",
+    "target_text": "I can help with cancel order for order ORD482838.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0231",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN61067",
+      "order_id": "ORD656898",
+      "payment_method": "credit_card"
+    },
+    "customer_utterance": "I need help with refund status for ORD656898.",
+    "target_text": "I can help with refund status for order ORD656898.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0041",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD939916"
+    },
+    "customer_utterance": "I need help with order status for ORD939916.",
+    "target_text": "I can help with order status for order ORD939916.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0027",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD196403",
+      "invoice_type": "standard",
+      "email": "customer684@example.com"
+    },
+    "customer_utterance": "I need help with invoice request for ORD196403.",
+    "target_text": "I can help with invoice request for order ORD196403.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0004",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "basmati rice"
+      ],
+      "pincode": "380510",
+      "store_id": "STR8563"
+    },
+    "customer_utterance": "I need help with product availability for ['basmati rice'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0279",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "bread",
+        "shampoo"
+      ],
+      "pincode": "560515",
+      "store_id": "STR8701"
+    },
+    "customer_utterance": "I need help with product availability for ['bread', 'shampoo'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0213",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FREESHIP",
+      "order_id": "ORD454029",
+      "cart_value": 2213
+    },
+    "customer_utterance": "I need help with coupon issue for ORD454029.",
+    "target_text": "I can help with coupon issue for order ORD454029.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0232",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD735800",
+      "phone_last4": "2120",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD735800.",
+    "target_text": "I can help with order status for order ORD735800.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0332",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD625943",
+      "expected_delivery_date": "2026-06-13",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": null
+    },
+    "customer_utterance": "I need help with delivery delay for ORD625943.",
+    "target_text": "I can help with delivery delay for order ORD625943.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0062",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "bananas",
+        "bananas"
+      ],
+      "pincode": "",
+      "store_id": "STR5476"
+    },
+    "customer_utterance": "I need help with product availability for ['bananas', 'bananas'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0282",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD993475",
+      "products": [
+        "green tea",
+        "shampoo"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD993475.",
+    "target_text": "I can help with return item for order ORD993475.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0293",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD468637",
+      "products": [
+        "potatoes"
+      ],
+      "exchange_reason": "wrong size",
+      "preferred_variant": "1 kg pack"
+    },
+    "customer_utterance": "I need help with exchange item for ORD468637.",
+    "target_text": "I can help with exchange item for order ORD468637.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0340",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD725156",
+      "transaction_id": "TXN73312215",
+      "payment_method": "wallet",
+      "issue_type": "payment_failed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD725156.",
+    "target_text": "I can help with payment issue for order ORD725156.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0343",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD661482",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Pune"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD661482.",
+    "target_text": "I can help with delivery delay for order ORD661482.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0354",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD701778",
+      "products": [
+        "pressure cooker",
+        "shampoo"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "customer_utterance": "I need help with modify order for ORD701778.",
+    "target_text": "I can help with modify order for order ORD701778.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0192",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "411223",
+      "store_type": "pickup_point"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0108",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD579736",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Mumbai",
+      "pincode": "380147"
+    },
+    "customer_utterance": "I need help with delivery address update for ORD579736.",
+    "target_text": "I can help with delivery address update for order ORD579736.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0142",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD649156",
+      "products": ""
+    },
+    "customer_utterance": "I need help with modify order for ORD649156.",
+    "target_text": "I can help with modify order for order ORD649156.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0341",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD533558",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Bengaluru"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD533558.",
+    "target_text": "I can help with delivery delay for order ORD533558.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0266",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD961734",
+      "products": [
+        "basmati rice",
+        "t-shirt"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD961734.",
+    "target_text": "I can help with modify order for order ORD961734.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0134",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD868414",
+      "transaction_id": "TXN85639903",
+      "payment_method": "cash_on_delivery",
+      "issue_type": "payment_failed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD868414.",
+    "target_text": "I can help with payment issue for order ORD868414.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0330",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD749649",
+      "products": [
+        "toothpaste",
+        "paneer",
+        "potatoes"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD749649.",
+    "target_text": "I can help with return item for order ORD749649.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0399",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD978733",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "curd"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD978733.",
+    "target_text": "I can help with cancel order for order ORD978733.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0352",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toor dal"
+      ],
+      "pincode": "",
+      "store_id": "STR5753"
+    },
+    "customer_utterance": "I need help with product availability for ['toor dal'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0157",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD189475",
+      "expected_delivery_date": "2026-06-14",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Gurugram"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD189475.",
+    "target_text": "I can help with delivery delay for order ORD189475.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0113",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD653831",
+      "cancellation_reason": "duplicate order",
+      "products": ""
+    },
+    "customer_utterance": "I need help with cancel order for ORD653831.",
+    "target_text": "I can help with cancel order for order ORD653831.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0252",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Chennai",
+      "pincode": "411405",
+      "store_type": "pickup_point"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0033",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD318136",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "eggs"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD318136.",
+    "target_text": "I can help with cancel order for order ORD318136.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0038",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORDER-??",
+      "products": [
+        "apples",
+        "baby diapers",
+        "bananas"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORDER-??.",
+    "target_text": "I can help with return item for order ORDER-??.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0398",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD224464",
+      "products": [
+        "green tea",
+        "milk",
+        "cooking oil"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD224464.",
+    "target_text": "I can help with return item for order ORD224464.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0168",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD369882",
+      "products": [
+        "bread",
+        "paneer"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "red color"
+    },
+    "customer_utterance": "I need help with exchange item for ORD369882.",
+    "target_text": "I can help with exchange item for order ORD369882.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0234",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD904589",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "toothpaste",
+        "curd"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD904589.",
+    "target_text": "I can help with cancel order for order ORD904589.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0011",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD934533",
+      "complaint_type": "late_delivery",
+      "products": [
+        "curd",
+        "toothpaste"
+      ],
+      "description": "product was stale"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD934533.",
+    "target_text": "I can help with complaint registration for order ORD934533.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0209",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD942049",
+      "products": [
+        "basmati rice",
+        "t-shirt",
+        "paneer"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address",
+      "ambiguous_reference": "the last order"
+    },
+    "customer_utterance": "Can you help with the last order?",
+    "target_text": "I can help with return item for order ORD942049.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0170",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB69361",
+      "issue_type": "benefit_not_applied",
+      "phone_last4": "3211"
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0275",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD372452",
+      "products": [
+        "bananas"
+      ],
+      "quantity_change": "increase to 2 packs",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD372452.",
+    "target_text": "I can help with modify order for order ORD372452.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0073",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD952786",
+      "cancellation_reason": null,
+      "products": [
+        "basmati rice",
+        "eggs"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD952786.",
+    "target_text": "I can help with cancel order for order ORD952786.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0295",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD470226",
+      "expected_delivery_date": "2026-06-09",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Hyderabad"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD470226.",
+    "target_text": "I can help with delivery delay for order ORD470226.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0017",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD569033",
+      "products": [
+        "shampoo",
+        "bananas"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD569033.",
+    "target_text": "I can help with modify order for order ORD569033.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0366",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD316247",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "green tea"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD316247.",
+    "target_text": "I can help with cancel order for order ORD316247.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0249",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD994243",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "apples",
+        "tomatoes"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD994243.",
+    "target_text": "I can help with cancel order for order ORD994243.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0400",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD312929",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "detergent",
+        "basmati rice"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD312929.",
+    "target_text": "I can help with cancel order for order ORD312929.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0182",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD550515",
+      "phone_last4": "3542",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD550515.",
+    "target_text": "I can help with order status for order ORD550515.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0201",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "baby diapers",
+        "almonds"
+      ],
+      "pincode": "110490",
+      "store_id": "STR8273"
+    },
+    "customer_utterance": "I need help with product availability for ['baby diapers', 'almonds'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0151",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "12345",
+      "products": [
+        "baby diapers",
+        "baby diapers"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "customer_utterance": "I need help with modify order for 12345.",
+    "target_text": "I can help with modify order for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0381",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD525685",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": null,
+      "ambiguous_reference": "the last order"
+    },
+    "customer_utterance": "Can you help with the last order?",
+    "target_text": "I can help with delivery delay for order ORD525685.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0076",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB68928",
+      "issue_type": "benefit_not_applied",
+      "phone_last4": "6168"
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0206",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": null,
+      "products": [
+        "pressure cooker"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 AM - 10 AM"
+    },
+    "customer_utterance": "I need help with modify order for None.",
+    "target_text": "I can help with modify order. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0129",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD105340",
+      "transaction_id": "TXN31732545",
+      "payment_method": "wallet",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD105340.",
+    "target_text": "I can help with payment issue for order ORD105340.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0220",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "tomatoes"
+      ],
+      "pincode": "560922",
+      "store_id": "STR5857"
+    },
+    "customer_utterance": "I need help with product availability for ['tomatoes'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0393",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD934274",
+      "cart_value": 2860
+    },
+    "customer_utterance": "I need help with coupon issue for ORD934274.",
+    "target_text": "I can help with coupon issue for order ORD934274.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0257",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD561002",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Ahmedabad",
+      "products": [
+        "detergent",
+        "pressure cooker",
+        "tomatoes",
+        "detergent"
+      ]
+    },
+    "customer_utterance": "I need help with delivery delay for ORD561002.",
+    "target_text": "I can help with delivery delay for order ORD561002.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0043",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": null,
+      "expected_delivery_date": "2026-06-09",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Gurugram"
+    },
+    "customer_utterance": "I need help with delivery delay for None.",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0024",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "curd"
+      ],
+      "pincode": "122953",
+      "store_id": "STR2295"
+    },
+    "customer_utterance": "I need help with product availability for ['curd'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0283",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD219355",
+      "products": [
+        "pressure cooker",
+        "shampoo"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD219355.",
+    "target_text": "I can help with modify order for order ORD219355.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0133",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD278392",
+      "phone_last4": "4312",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD278392.",
+    "target_text": "I can help with order status for order ORD278392.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0323",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD715256",
+      "transaction_id": "TXN45457535",
+      "payment_method": "debit_card",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD715256.",
+    "target_text": "I can help with payment issue for order ORD715256.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0141",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD881180",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "basmati rice",
+        "toor dal"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD881180.",
+    "target_text": "I can help with cancel order for order ORD881180.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0329",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD179770",
+      "products": [
+        "t-shirt",
+        "cooking oil"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "10 AM - 12 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD179770.",
+    "target_text": "I can help with modify order for order ORD179770.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0304",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN78881",
+      "order_id": "ORD886379",
+      "payment_method": "credit_card"
+    },
+    "customer_utterance": "I need help with refund status for ORD886379.",
+    "target_text": "I can help with refund status for order ORD886379.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0327",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD652235",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Ahmedabad"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD652235.",
+    "target_text": "I can help with delivery delay for order ORD652235.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0273",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "potatoes",
+        "cooking oil",
+        "apples"
+      ],
+      "pincode": "700107",
+      "store_id": "STR1676"
+    },
+    "customer_utterance": "I need help with product availability for ['potatoes', 'cooking oil', 'apples'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0205",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "122939",
+      "store_type": "",
+      "products": [
+        "shampoo",
+        "bananas"
+      ]
+    },
+    "customer_utterance": "I need help with store locator for ['shampoo', 'bananas'].",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0036",
+    "intent": "product_availability",
+    "slots": {
+      "pincode": "560698",
+      "store_id": "STR6905"
+    },
+    "customer_utterance": "I need help with product availability for my account.",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0135",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB29041",
+      "issue_type": "membership_not_visible",
+      "phone_last4": "4017"
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0012",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": null,
+      "order_id": "ORD972548",
+      "payment_method": "net_banking",
+      "products": [
+        "milk",
+        "toor dal",
+        "onions",
+        "bread"
+      ]
+    },
+    "customer_utterance": "I need help with refund status for ORD972548.",
+    "target_text": "I can help with refund status for order ORD972548.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0077",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD664152",
+      "products": [
+        "apples",
+        "potatoes"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD664152.",
+    "target_text": "I can help with modify order for order ORD664152.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0379",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN64950",
+      "order_id": "ORD216961",
+      "payment_method": "wallet"
+    },
+    "customer_utterance": "I need help with refund status for ORD216961.",
+    "target_text": "I can help with refund status for order ORD216961.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0026",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD900949",
+      "complaint_type": "wrong_item",
+      "products": [
+        "toothpaste",
+        "pressure cooker"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD900949.",
+    "target_text": "I can help with complaint registration for order ORD900949.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0207",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD478514",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Bengaluru"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD478514.",
+    "target_text": "I can help with delivery delay for order ORD478514.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0031",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD360125",
+      "phone_last4": "0377",
+      "channel": "store"
+    },
+    "customer_utterance": "I need help with order status for ORD360125.",
+    "target_text": "I can help with order status for order ORD360125.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0255",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB56902",
+      "issue_type": "membership_not_visible",
+      "phone_last4": "0885"
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0048",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD204178",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "potatoes"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD204178.",
+    "target_text": "I can help with cancel order for order ORD204178.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0344",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD545171",
+      "cancellation_reason": "ordered by mistake",
+      "products": "",
+      "ambiguous_reference": "the second one"
+    },
+    "customer_utterance": "Can you help with the second one?",
+    "target_text": "I can help with cancel order for order ORD545171.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0123",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD769897",
+      "phone_last4": "6923",
+      "channel": "call_center"
+    },
+    "customer_utterance": "I need help with order status for ORD769897.",
+    "target_text": "I can help with order status for order ORD769897.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0274",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "SAVE100",
+      "order_id": "ORD654440",
+      "cart_value": 3844
+    },
+    "customer_utterance": "I need help with coupon issue for ORD654440.",
+    "target_text": "I can help with coupon issue for order ORD654440.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0044",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORDER-??",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Delhi",
+      "pincode": "600171"
+    },
+    "customer_utterance": "I need help with delivery address update for ORDER-??.",
+    "target_text": "I can help with delivery address update for order ORDER-??.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0247",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD860590",
+      "products": [
+        "apples",
+        "t-shirt"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD860590.",
+    "target_text": "I can help with return item for order ORD860590.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0294",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD678272",
+      "products": [
+        "tomatoes",
+        "paneer"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD678272.",
+    "target_text": "I can help with return item for order ORD678272.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0127",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD814563",
+      "phone_last4": "2703",
+      "channel": "store",
+      "ambiguous_reference": "the last order",
+      "products": [
+        "eggs",
+        "tomatoes",
+        "eggs"
+      ]
+    },
+    "customer_utterance": "Can you help with the last order?",
+    "target_text": "I can help with order status for order ORD814563.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0023",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD420118",
+      "phone_last4": "5269",
+      "channel": "call_center",
+      "products": [
+        "shampoo",
+        "toothpaste",
+        "detergent",
+        "bread"
+      ]
+    },
+    "customer_utterance": "I need help with order status for ORD420118.",
+    "target_text": "I can help with order status for order ORD420118.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0377",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD600711",
+      "transaction_id": "TXN10023697",
+      "payment_method": "UPI",
+      "issue_type": "duplicate_charge"
+    },
+    "customer_utterance": "I need help with payment issue for ORD600711.",
+    "target_text": "I can help with payment issue for order ORD600711.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0350",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD525321",
+      "products": [
+        "paneer"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "red color"
+    },
+    "customer_utterance": "I need help with exchange item for ORD525321.",
+    "target_text": "I can help with exchange item for order ORD525321.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0065",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": null
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0349",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD419582",
+      "complaint_type": "late_delivery",
+      "products": [
+        "milk"
+      ],
+      "description": "one item was missing"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD419582.",
+    "target_text": "I can help with complaint registration for order ORD419582.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0161",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "tomatoes",
+        "bread"
+      ],
+      "pincode": "122520",
+      "store_id": ""
+    },
+    "customer_utterance": "I need help with product availability for ['tomatoes', 'bread'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0185",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD484583",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "basmati rice",
+        "toothpaste"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD484583.",
+    "target_text": "I can help with cancel order for order ORD484583.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0139",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD276955",
+      "phone_last4": "2343",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD276955.",
+    "target_text": "I can help with order status for order ORD276955.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0072",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD318321",
+      "products": [
+        "bananas"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "size L"
+    },
+    "customer_utterance": "I need help with exchange item for ORD318321.",
+    "target_text": "I can help with exchange item for order ORD318321.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0362",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD939321",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Mumbai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD939321.",
+    "target_text": "I can help with delivery delay for order ORD939321.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0258",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD484124",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Mumbai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD484124.",
+    "target_text": "I can help with delivery delay for order ORD484124.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0071",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD335286",
+      "cancellation_reason": "delivery too late",
+      "products": ""
+    },
+    "customer_utterance": "I need help with cancel order for ORD335286.",
+    "target_text": "I can help with cancel order for order ORD335286.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0092",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "detergent",
+        "atta",
+        "green tea"
+      ],
+      "pincode": "400368",
+      "store_id": "STR6427"
+    },
+    "customer_utterance": "I need help with product availability for ['detergent', 'atta', 'green tea'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0015",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FREESHIP",
+      "order_id": "ORD259812",
+      "cart_value": 1838
+    },
+    "customer_utterance": "I need help with coupon issue for ORD259812.",
+    "target_text": "I can help with coupon issue for order ORD259812.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0321",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD424834",
+      "phone_last4": "8764",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD424834.",
+    "target_text": "I can help with order status for order ORD424834.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0120",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD504431",
+      "expected_delivery_date": "2026-06-13",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Mumbai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD504431.",
+    "target_text": "I can help with delivery delay for order ORD504431.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0128",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD239812",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Ahmedabad"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD239812.",
+    "target_text": "I can help with delivery delay for order ORD239812.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0276",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD954165",
+      "phone_last4": "8585",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD954165.",
+    "target_text": "I can help with order status for order ORD954165.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0178",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN15135",
+      "order_id": "ORD425526",
+      "payment_method": "net_banking"
+    },
+    "customer_utterance": "I need help with refund status for ORD425526.",
+    "target_text": "I can help with refund status for order ORD425526.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0047",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD628830",
+      "complaint_type": "missing_item",
+      "products": [
+        "paneer",
+        "toor dal"
+      ],
+      "description": "one item was missing"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD628830.",
+    "target_text": "I can help with complaint registration for order ORD628830.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0196",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN14261",
+      "order_id": "ORD308627",
+      "payment_method": "wallet"
+    },
+    "customer_utterance": "I need help with refund status for ORD308627.",
+    "target_text": "I can help with refund status for order ORD308627.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0144",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD769997",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "detergent"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD769997.",
+    "target_text": "I can help with cancel order for order ORD769997.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0239",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD955510",
+      "products": [
+        "bread",
+        "milk"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD955510.",
+    "target_text": "I can help with modify order for order ORD955510.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0035",
+    "intent": "order_status",
+    "slots": {
+      "phone_last4": "5984",
+      "channel": "app",
+      "products": [
+        "potatoes",
+        "almonds",
+        "potatoes"
+      ]
+    },
+    "customer_utterance": "I need help with order status for ['potatoes', 'almonds', 'potatoes'].",
+    "target_text": "I can help with order status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0117",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "onions",
+        "baby diapers",
+        "onions"
+      ],
+      "pincode": "411185",
+      "store_id": "STR9173"
+    },
+    "customer_utterance": "I need help with product availability for ['onions', 'baby diapers', 'onions'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0353",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN15682",
+      "order_id": null,
+      "payment_method": "credit_card"
+    },
+    "customer_utterance": "I need help with refund status for None.",
+    "target_text": "I can help with refund status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0317",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toor dal"
+      ]
+    },
+    "customer_utterance": "I need help with product availability for ['toor dal'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0389",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD877301",
+      "phone_last4": "8495",
+      "channel": "website"
+    },
+    "customer_utterance": "I need help with order status for ORD877301.",
+    "target_text": "I can help with order status for order ORD877301.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0163",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD999694",
+      "products": [
+        "shampoo",
+        "apples",
+        "onions"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD999694.",
+    "target_text": "I can help with return item for order ORD999694.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0348",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD419852",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "shampoo",
+        "eggs"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD419852.",
+    "target_text": "I can help with cancel order for order ORD419852.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0312",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD219097",
+      "complaint_type": "late_delivery",
+      "products": [
+        "detergent"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD219097.",
+    "target_text": "I can help with complaint registration for order ORD219097.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0371",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD919399",
+      "complaint_type": "late_delivery",
+      "products": [
+        "almonds",
+        "cooking oil"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD919399.",
+    "target_text": "I can help with complaint registration for order ORD919399.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0191",
+    "intent": "delivery_delay",
+    "slots": {
+      "expected_delivery_date": "2026-06-13",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Pune",
+      "products": [
+        "green tea",
+        "curd",
+        "detergent",
+        "shampoo"
+      ]
+    },
+    "customer_utterance": "I need help with delivery delay for ['green tea', 'curd', 'detergent', 'shampoo'].",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0086",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD532645",
+      "products": [
+        "t-shirt",
+        "curd"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "size L"
+    },
+    "customer_utterance": "I need help with exchange item for ORD532645.",
+    "target_text": "I can help with exchange item for order ORD532645.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0254",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD221012",
+      "invoice_type": "GST",
+      "email": "customer677@example.com"
+    },
+    "customer_utterance": "I need help with invoice request for ORD221012.",
+    "target_text": "I can help with invoice request for order ORD221012.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0124",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD860216",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Hyderabad"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD860216.",
+    "target_text": "I can help with delivery delay for order ORD860216.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0250",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD387515",
+      "phone_last4": "8778",
+      "channel": "website"
+    },
+    "customer_utterance": "I need help with order status for ORD387515.",
+    "target_text": "I can help with order status for order ORD387515.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0186",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "12345",
+      "products": [
+        "t-shirt",
+        "bread"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for 12345.",
+    "target_text": "I can help with return item for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0167",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD391159",
+      "complaint_type": "poor_quality",
+      "products": [
+        "shampoo"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD391159.",
+    "target_text": "I can help with complaint registration for order ORD391159.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0091",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD303171",
+      "products": [
+        "almonds",
+        "atta"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD303171.",
+    "target_text": "I can help with return item for order ORD303171.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0397",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD852549",
+      "products": [
+        "green tea",
+        "pressure cooker",
+        "basmati rice"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD852549.",
+    "target_text": "I can help with return item for order ORD852549.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0030",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "eggs",
+        "almonds"
+      ],
+      "pincode": "500985",
+      "store_id": "STR2142"
+    },
+    "customer_utterance": "I need help with product availability for ['eggs', 'almonds'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0094",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD489034",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Gurugram",
+      "pincode": "411125"
+    },
+    "customer_utterance": "I need help with delivery address update for ORD489034.",
+    "target_text": "I can help with delivery address update for order ORD489034.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0355",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD351437",
+      "products": [
+        "bananas",
+        "paneer",
+        "atta"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD351437.",
+    "target_text": "I can help with return item for order ORD351437.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0008",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD167379",
+      "expected_delivery_date": "2026-06-08",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Mumbai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD167379.",
+    "target_text": "I can help with delivery delay for order ORD167379.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0322",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD282877",
+      "transaction_id": "TXN70170162",
+      "payment_method": "cash_on_delivery",
+      "issue_type": "duplicate_charge"
+    },
+    "customer_utterance": "I need help with payment issue for ORD282877.",
+    "target_text": "I can help with payment issue for order ORD282877.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0281",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD382879",
+      "transaction_id": "TXN79886405",
+      "payment_method": "debit_card",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD382879.",
+    "target_text": "I can help with payment issue for order ORD382879.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0171",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD431577"
+    },
+    "customer_utterance": "I need help with cancel order for ORD431577.",
+    "target_text": "I can help with cancel order for order ORD431577.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0267",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN61021",
+      "order_id": "ORD664241",
+      "payment_method": "UPI"
+    },
+    "customer_utterance": "I need help with refund status for ORD664241.",
+    "target_text": "I can help with refund status for order ORD664241.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0386",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD406634",
+      "cart_value": 1288
+    },
+    "customer_utterance": "I need help with coupon issue for ORD406634.",
+    "target_text": "I can help with coupon issue for order ORD406634.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0118",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD604782",
+      "new_address": "Office reception desk",
+      "city": "Delhi",
+      "pincode": "122181"
+    },
+    "customer_utterance": "I need help with delivery address update for ORD604782.",
+    "target_text": "I can help with delivery address update for order ORD604782.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0045",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "milk"
+      ],
+      "pincode": "560516",
+      "store_id": "ORD"
+    },
+    "customer_utterance": "I need help with product availability for ['milk'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0376",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD195531",
+      "products": [
+        "toor dal",
+        "green tea",
+        "bananas"
+      ],
+      "return_reason": null,
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD195531.",
+    "target_text": "I can help with return item for order ORD195531.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0068",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD524690",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Kolkata"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD524690.",
+    "target_text": "I can help with delivery delay for order ORD524690.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0256",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD592481",
+      "complaint_type": "wrong_item"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD592481.",
+    "target_text": "I can help with complaint registration for order ORD592481.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0105",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "paneer",
+        "eggs"
+      ],
+      "pincode": "700570",
+      "store_id": "STR4456"
+    },
+    "customer_utterance": "I need help with product availability for ['paneer', 'eggs'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0237",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD813466",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "t-shirt"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD813466.",
+    "target_text": "I can help with cancel order for order ORD813466.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0087",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "WEEKEND200",
+      "order_id": "ORD278565",
+      "cart_value": 462
+    },
+    "customer_utterance": "I need help with coupon issue for ORD278565.",
+    "target_text": "I can help with coupon issue for order ORD278565.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0039",
+    "intent": "return_item",
+    "slots": {
+      "products": [
+        "toor dal",
+        "bread",
+        "pressure cooker"
+      ],
+      "return_reason": null,
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ['toor dal', 'bread', 'pressure cooker'].",
+    "target_text": "I can help with return item. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0365",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Delhi",
+      "pincode": "122410",
+      "store_type": "pickup_point"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0338",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD667846",
+      "phone_last4": "1504",
+      "channel": "",
+      "products": [
+        "paneer",
+        "curd",
+        "paneer"
+      ]
+    },
+    "customer_utterance": "I need help with order status for ORD667846.",
+    "target_text": "I can help with order status for order ORD667846.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0194",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD498641",
+      "products": [
+        "atta"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD498641.",
+    "target_text": "I can help with modify order for order ORD498641.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0054",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD477930",
+      "products": [
+        "bananas"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD477930.",
+    "target_text": "I can help with modify order for order ORD477930.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0280",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "110429",
+      "store_type": "express_store"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0382",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD628019",
+      "products": [
+        "milk",
+        "milk"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD628019.",
+    "target_text": "I can help with modify order for order ORD628019.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0208",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN76840",
+      "order_id": "ORD485725",
+      "payment_method": "debit_card",
+      "products": [
+        "green tea",
+        "green tea"
+      ]
+    },
+    "customer_utterance": "I need help with refund status for ORD485725.",
+    "target_text": "I can help with refund status for order ORD485725.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0203",
+    "intent": "cancel_order",
+    "slots": {
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "onions"
+      ],
+      "order_id": "12345"
+    },
+    "customer_utterance": "I need help with cancel order for 12345.",
+    "target_text": "I can help with cancel order for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot",
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0056",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD986652",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "almonds"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD986652.",
+    "target_text": "I can help with cancel order for order ORD986652.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0189",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD854753",
+      "invoice_type": "standard",
+      "email": "customer684@example.com"
+    },
+    "customer_utterance": "I need help with invoice request for ORD854753.",
+    "target_text": "I can help with invoice request for order ORD854753.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0190",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD428089",
+      "products": [
+        "curd",
+        "baby diapers"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "red color"
+    },
+    "customer_utterance": "I need help with exchange item for ORD428089.",
+    "target_text": "I can help with exchange item for order ORD428089.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0372",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB85904",
+      "issue_type": "renewal_failed",
+      "phone_last4": "1989"
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0099",
+    "intent": "product_availability",
+    "slots": {
+      "products": "",
+      "pincode": "500660",
+      "store_id": "STR6890"
+    },
+    "customer_utterance": "I need help with product availability for .",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0083",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "basmati rice"
+      ],
+      "pincode": "110164",
+      "store_id": "STR8088"
+    },
+    "customer_utterance": "I need help with product availability for ['basmati rice'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0259",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD125361",
+      "transaction_id": "",
+      "payment_method": "net_banking",
+      "issue_type": "payment_failed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD125361.",
+    "target_text": "I can help with payment issue for order ORD125361.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0057",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD320903",
+      "ambiguous_reference": "same item"
+    },
+    "customer_utterance": "Can you help with same item?",
+    "target_text": "I can help with order status for order ORD320903.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0324",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD964093",
+      "products": [
+        "milk",
+        "bananas",
+        "apples",
+        "potatoes"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": ""
+    },
+    "customer_utterance": "I need help with return item for ORD964093.",
+    "target_text": "I can help with return item for order ORD964093.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0336",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD374160",
+      "products": [
+        "potatoes",
+        "almonds"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD374160.",
+    "target_text": "I can help with return item for order ORD374160.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0132",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD136903",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Pune"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD136903.",
+    "target_text": "I can help with delivery delay for order ORD136903.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0159",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "12345",
+      "products": [
+        "t-shirt",
+        "apples"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "size L"
+    },
+    "customer_utterance": "I need help with exchange item for 12345.",
+    "target_text": "I can help with exchange item for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0345",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD943581",
+      "products": [
+        "milk",
+        "basmati rice"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": ""
+    },
+    "customer_utterance": "I need help with exchange item for ORD943581.",
+    "target_text": "I can help with exchange item for order ORD943581.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0314",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "green tea",
+        "almonds"
+      ],
+      "pincode": "110354",
+      "store_id": "STR1024"
+    },
+    "customer_utterance": "I need help with product availability for ['green tea', 'almonds'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0302",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD669311",
+      "products": [
+        "tomatoes"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "customer_utterance": "I need help with modify order for ORD669311.",
+    "target_text": "I can help with modify order for order ORD669311.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0369",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD615486",
+      "products": [
+        "tomatoes",
+        "potatoes",
+        "toor dal"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD615486.",
+    "target_text": "I can help with return item for order ORD615486.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0148",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "INVALID_ID",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Gurugram"
+    },
+    "customer_utterance": "I need help with delivery delay for INVALID_ID.",
+    "target_text": "I can help with delivery delay for order INVALID_ID.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0107",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD491699",
+      "products": [
+        "bananas"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD491699.",
+    "target_text": "I can help with modify order for order ORD491699.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0233",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD826408",
+      "complaint_type": "poor_quality",
+      "products": [
+        "basmati rice"
+      ],
+      "description": ""
+    },
+    "customer_utterance": "I need help with complaint registration for ORD826408.",
+    "target_text": "I can help with complaint registration for order ORD826408.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0188",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD476992",
+      "transaction_id": "TXN95047514",
+      "issue_type": "duplicate_charge"
+    },
+    "customer_utterance": "I need help with payment issue for ORD476992.",
+    "target_text": "I can help with payment issue for order ORD476992.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0090",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD286201",
+      "transaction_id": "TXN38933672",
+      "payment_method": "credit_card",
+      "issue_type": "payment_failed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD286201.",
+    "target_text": "I can help with payment issue for order ORD286201.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0138",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD296349",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Mumbai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD296349.",
+    "target_text": "I can help with delivery delay for order ORD296349.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0067",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD640915",
+      "phone_last4": "9569",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD640915.",
+    "target_text": "I can help with order status for order ORD640915.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0241",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD955648",
+      "products": [
+        "curd",
+        "green tea",
+        "curd"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD955648.",
+    "target_text": "I can help with return item for order ORD955648.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0289",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD647050",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Pune"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD647050.",
+    "target_text": "I can help with delivery delay for order ORD647050.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0184",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD152154",
+      "products": [
+        "paneer",
+        "eggs"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD152154.",
+    "target_text": "I can help with return item for order ORD152154.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0217",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD226090",
+      "products": [
+        "eggs"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "customer_utterance": "I need help with modify order for ORD226090.",
+    "target_text": "I can help with modify order for order ORD226090.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0058",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD963551",
+      "transaction_id": "TXN55715539",
+      "payment_method": "UPI",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD963551.",
+    "target_text": "I can help with payment issue for order ORD963551.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0176",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD823482",
+      "phone_last4": "6091",
+      "channel": "website"
+    },
+    "customer_utterance": "I need help with order status for ORD823482.",
+    "target_text": "I can help with order status for order ORD823482.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0313",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD972488",
+      "products": [
+        "t-shirt",
+        "detergent"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD972488.",
+    "target_text": "I can help with return item for order ORD972488.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0291",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD112410",
+      "products": [
+        "paneer",
+        "onions",
+        "tomatoes",
+        "paneer"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD112410.",
+    "target_text": "I can help with return item for order ORD112410.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0396",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Chennai",
+      "pincode": "700741",
+      "store_type": "pickup_point"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0010",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "400582",
+      "store_type": "pickup_point"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0140",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD178792",
+      "products": [
+        "green tea",
+        "onions"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "customer_utterance": "I need help with modify order for ORD178792.",
+    "target_text": "I can help with modify order for order ORD178792.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0081",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD422445",
+      "transaction_id": "TXN34925302",
+      "payment_method": "UPI",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD422445.",
+    "target_text": "I can help with payment issue for order ORD422445.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0051",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD981559",
+      "products": [
+        "tomatoes",
+        "shampoo"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "1 kg pack"
+    },
+    "customer_utterance": "I need help with exchange item for ORD981559.",
+    "target_text": "I can help with exchange item for order ORD981559.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0391",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD260112",
+      "phone_last4": "8685",
+      "channel": "store"
+    },
+    "customer_utterance": "I need help with order status for ORD260112.",
+    "target_text": "I can help with order status for order ORD260112.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0236",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD925550",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Mumbai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD925550.",
+    "target_text": "I can help with delivery delay for order ORD925550.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0175",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN87744",
+      "order_id": "ORD833630",
+      "payment_method": "cash_on_delivery"
+    },
+    "customer_utterance": "I need help with refund status for ORD833630.",
+    "target_text": "I can help with refund status for order ORD833630.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0384",
+    "intent": "modify_order",
+    "slots": {
+      "products": [
+        "shampoo"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "customer_utterance": "I need help with modify order for ['shampoo'].",
+    "target_text": "I can help with modify order. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0199",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD337693",
+      "products": [
+        "apples"
+      ]
+    },
+    "customer_utterance": "I need help with exchange item for ORD337693.",
+    "target_text": "I can help with exchange item for order ORD337693.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0093",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN71788",
+      "order_id": "ORD272787",
+      "payment_method": "UPI"
+    },
+    "customer_utterance": "I need help with refund status for ORD272787.",
+    "target_text": "I can help with refund status for order ORD272787.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0367",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD833244",
+      "cart_value": 1838
+    },
+    "customer_utterance": "I need help with coupon issue for ORD833244.",
+    "target_text": "I can help with coupon issue for order ORD833244.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0046",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD162548",
+      "complaint_type": "poor_quality"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD162548.",
+    "target_text": "I can help with complaint registration for order ORD162548.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0137",
+    "intent": "order_status",
+    "slots": {
+      "order_id": null
+    },
+    "customer_utterance": "I need help with order status for None.",
+    "target_text": "I can help with order status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0251",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Pune",
+      "pincode": "122458",
+      "store_type": "express_store"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0037",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD558812",
+      "phone_last4": "2009",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD558812.",
+    "target_text": "I can help with order status for order ORD558812.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0013",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD292881",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Kolkata"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD292881.",
+    "target_text": "I can help with delivery delay for order ORD292881.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0325",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD912123",
+      "phone_last4": "4114",
+      "channel": "store"
+    },
+    "customer_utterance": "I need help with order status for ORD912123.",
+    "target_text": "I can help with order status for order ORD912123.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0296",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD170942",
+      "transaction_id": "TXN91067823",
+      "payment_method": "net_banking",
+      "issue_type": "payment_failed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD170942.",
+    "target_text": "I can help with payment issue for order ORD170942.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0115",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB44343",
+      "issue_type": "benefit_not_applied",
+      "phone_last4": "6023"
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0198",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN38048",
+      "order_id": "ORD519464",
+      "payment_method": "net_banking"
+    },
+    "customer_utterance": "I need help with refund status for ORD519464.",
+    "target_text": "I can help with refund status for order ORD519464.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0110",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD154193",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Chennai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD154193.",
+    "target_text": "I can help with delivery delay for order ORD154193.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0357",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD426679",
+      "transaction_id": "TXN71399271",
+      "payment_method": "debit_card",
+      "issue_type": "payment_failed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD426679.",
+    "target_text": "I can help with payment issue for order ORD426679.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0187",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN48552",
+      "order_id": "ORD827389",
+      "payment_method": "cash_on_delivery"
+    },
+    "customer_utterance": "I need help with refund status for ORD827389.",
+    "target_text": "I can help with refund status for order ORD827389.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0064",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD846856",
+      "products": [
+        "curd",
+        "atta",
+        "almonds",
+        "pressure cooker"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address",
+      "ambiguous_reference": "yesterday delivery"
+    },
+    "customer_utterance": "Can you help with yesterday delivery?",
+    "target_text": "I can help with return item for order ORD846856.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0308",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD",
+      "products": [
+        "onions",
+        "paneer"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 AM - 10 AM"
+    },
+    "customer_utterance": "I need help with modify order for ORD.",
+    "target_text": "I can help with modify order for order ORD.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0050",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "pressure cooker",
+        "detergent",
+        "baby diapers"
+      ],
+      "pincode": "560538",
+      "store_id": "STR2953"
+    },
+    "customer_utterance": "I need help with product availability for ['pressure cooker', 'detergent', 'baby diapers'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0230",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD240094",
+      "phone_last4": "9743",
+      "channel": "store",
+      "ambiguous_reference": "the second one"
+    },
+    "customer_utterance": "Can you help with the second one?",
+    "target_text": "I can help with order status for order ORD240094.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0374",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD656239",
+      "complaint_type": "missing_item",
+      "products": [
+        "detergent"
+      ],
+      "description": "one item was missing"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD656239.",
+    "target_text": "I can help with complaint registration for order ORD656239.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0002",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Chennai",
+      "pincode": "110607",
+      "store_type": "pickup_point",
+      "order_id": ""
+    },
+    "customer_utterance": "I need help with store locator for .",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0097",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Bengaluru",
+      "pincode": "380891",
+      "store_type": "express_store"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0080",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "almonds",
+        "toor dal"
+      ],
+      "pincode": "400914",
+      "store_id": "STR7422"
+    },
+    "customer_utterance": "I need help with product availability for ['almonds', 'toor dal'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0149",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD134678",
+      "expected_delivery_date": "2026-06-14",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Kolkata"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD134678.",
+    "target_text": "I can help with delivery delay for order ORD134678.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0227",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD365078",
+      "products": [
+        "onions",
+        "bread"
+      ]
+    },
+    "customer_utterance": "Can you help with that order?",
+    "target_text": "I can help with exchange item for order ORD365078.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0085",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toothpaste"
+      ],
+      "pincode": "560115",
+      "store_id": "",
+      "ambiguous_reference": "the last order"
+    },
+    "customer_utterance": "Can you help with the last order?",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0158",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD232329",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Delhi"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD232329.",
+    "target_text": "I can help with delivery delay for order ORD232329.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0342",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD175390",
+      "expected_delivery_date": "2026-06-10"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD175390.",
+    "target_text": "I can help with delivery delay for order ORD175390.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0193",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD935381",
+      "products": [
+        "shampoo",
+        "green tea"
+      ],
+      "exchange_reason": "wrong size",
+      "preferred_variant": "size L"
+    },
+    "customer_utterance": "I need help with exchange item for ORD935381.",
+    "target_text": "I can help with exchange item for order ORD935381.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0264",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD474670",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Bengaluru"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD474670.",
+    "target_text": "I can help with delivery delay for order ORD474670.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0235",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN64473",
+      "order_id": "ORD509938",
+      "payment_method": "debit_card"
+    },
+    "customer_utterance": "I need help with refund status for ORD509938.",
+    "target_text": "I can help with refund status for order ORD509938.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0160",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD555092",
+      "complaint_type": "late_delivery",
+      "products": [
+        "paneer",
+        "milk"
+      ],
+      "description": "one item was missing"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD555092.",
+    "target_text": "I can help with complaint registration for order ORD555092.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0214",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD893420",
+      "phone_last4": "1510",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD893420.",
+    "target_text": "I can help with order status for order ORD893420.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0082",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN14469",
+      "order_id": "ORD915148",
+      "payment_method": "credit_card"
+    },
+    "customer_utterance": "I need help with refund status for ORD915148.",
+    "target_text": "I can help with refund status for order ORD915148.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0098",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD184357",
+      "complaint_type": "poor_quality",
+      "products": [
+        "toothpaste",
+        "apples"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD184357.",
+    "target_text": "I can help with complaint registration for order ORD184357.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0202",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FREESHIP",
+      "order_id": "ORD815348",
+      "cart_value": 2361
+    },
+    "customer_utterance": "I need help with coupon issue for ORD815348.",
+    "target_text": "I can help with coupon issue for order ORD815348.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0147",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "shampoo",
+        "bread",
+        "eggs"
+      ],
+      "pincode": "411528",
+      "store_id": "STR7307"
+    },
+    "customer_utterance": "I need help with product availability for ['shampoo', 'bread', 'eggs'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0311",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD964936",
+      "transaction_id": "TXN56127067",
+      "payment_method": "cash_on_delivery",
+      "issue_type": "payment_failed",
+      "products": [
+        "apples",
+        "atta",
+        "apples"
+      ]
+    },
+    "customer_utterance": "I need help with payment issue for ORD964936.",
+    "target_text": "I can help with payment issue for order ORD964936.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0070",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD790286",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "curd"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD790286.",
+    "target_text": "I can help with cancel order for order ORD790286.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0069",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD923638",
+      "complaint_type": "late_delivery",
+      "products": [
+        "t-shirt",
+        "shampoo"
+      ],
+      "description": "product was stale"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD923638.",
+    "target_text": "I can help with complaint registration for order ORD923638.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0261",
+    "intent": "delivery_delay",
+    "slots": {
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Ahmedabad"
+    },
+    "customer_utterance": "I need help with delivery delay for my account.",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0240",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD235592",
+      "phone_last4": "3954",
+      "channel": ""
+    },
+    "customer_utterance": "I need help with order status for ORD235592.",
+    "target_text": "I can help with order status for order ORD235592.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0061",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD365414",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Bengaluru"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD365414.",
+    "target_text": "I can help with delivery delay for order ORD365414.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0335",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD239568",
+      "phone_last4": "0749",
+      "channel": "store"
+    },
+    "customer_utterance": "I need help with order status for ORD239568.",
+    "target_text": "I can help with order status for order ORD239568.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0104",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD828696",
+      "transaction_id": "TXN32361249",
+      "payment_method": "wallet",
+      "issue_type": "duplicate_charge"
+    },
+    "customer_utterance": "I need help with payment issue for ORD828696.",
+    "target_text": "I can help with payment issue for order ORD828696.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0152",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD903318",
+      "phone_last4": "5349",
+      "channel": "website"
+    },
+    "customer_utterance": "I need help with order status for ORD903318.",
+    "target_text": "I can help with order status for order ORD903318.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0028",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD307432",
+      "invoice_type": "GST",
+      "email": "customer115@example.com"
+    },
+    "customer_utterance": "I need help with invoice request for ORD307432.",
+    "target_text": "I can help with invoice request for order ORD307432.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0394",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD759811",
+      "products": [
+        "shampoo"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD759811.",
+    "target_text": "I can help with return item for order ORD759811.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0301",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD571042",
+      "products": [
+        "eggs",
+        "toor dal"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD571042.",
+    "target_text": "I can help with return item for order ORD571042.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0180",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "INVALID_ID"
+    },
+    "customer_utterance": "I need help with order status for INVALID_ID.",
+    "target_text": "I can help with order status for order INVALID_ID.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0373",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Pune",
+      "pincode": "110369",
+      "store_type": ""
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0288",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": null,
+      "products": [
+        "toothpaste"
+      ]
+    },
+    "customer_utterance": "I need help with modify order for None.",
+    "target_text": "I can help with modify order. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0368",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "detergent"
+      ],
+      "pincode": "560387",
+      "store_id": "STR6909",
+      "ambiguous_reference": "the last order"
+    },
+    "customer_utterance": "Can you help with the last order?",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0053",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD243468",
+      "products": [
+        "milk",
+        "cooking oil",
+        "toothpaste"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD243468.",
+    "target_text": "I can help with return item for order ORD243468.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0162",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "6 PM - 8 PM",
+      "city": "Gurugram",
+      "products": [
+        "baby diapers",
+        "baby diapers"
+      ]
+    },
+    "customer_utterance": "I need help with delivery delay for ORD.",
+    "target_text": "I can help with delivery delay for order ORD.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0174",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "milk",
+        "toor dal"
+      ],
+      "pincode": "500458",
+      "store_id": "STR2191"
+    },
+    "customer_utterance": "I need help with product availability for ['milk', 'toor dal'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0020",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD387411",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "6 PM - 8 PM",
+      "city": "Delhi"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD387411.",
+    "target_text": "I can help with delivery delay for order ORD387411.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0303",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD394378",
+      "transaction_id": "TXN42359636",
+      "payment_method": "debit_card",
+      "issue_type": "charged_but_order_not_placed",
+      "products": [
+        "pressure cooker",
+        "detergent"
+      ]
+    },
+    "customer_utterance": "I need help with payment issue for ORD394378.",
+    "target_text": "I can help with payment issue for order ORD394378.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0042",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORDER-??",
+      "expected_delivery_date": "2026-06-06"
+    },
+    "customer_utterance": "I need help with delivery delay for ORDER-??.",
+    "target_text": "I can help with delivery delay for order ORDER-??.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0179",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD711329",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Ahmedabad"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD711329.",
+    "target_text": "I can help with delivery delay for order ORD711329.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0172",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN19443",
+      "payment_method": "wallet",
+      "products": [
+        "t-shirt",
+        "onions",
+        "t-shirt"
+      ]
+    },
+    "customer_utterance": "I need help with refund status for ['t-shirt', 'onions', 't-shirt'].",
+    "target_text": "I can help with refund status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0253",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD264311",
+      "products": [
+        "almonds",
+        "potatoes"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "1 kg pack"
+    },
+    "customer_utterance": "I need help with exchange item for ORD264311.",
+    "target_text": "I can help with exchange item for order ORD264311.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0238",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD576244",
+      "complaint_type": "late_delivery",
+      "products": [
+        "cooking oil",
+        "detergent"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD576244.",
+    "target_text": "I can help with complaint registration for order ORD576244.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0111",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD845211",
+      "phone_last4": "0839",
+      "channel": "call_center"
+    },
+    "customer_utterance": "I need help with order status for ORD845211.",
+    "target_text": "I can help with order status for order ORD845211.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0084",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD444181",
+      "phone_last4": "5880",
+      "channel": "call_center",
+      "products": [
+        "cooking oil",
+        "baby diapers",
+        "atta"
+      ]
+    },
+    "customer_utterance": "I need help with order status for ORD444181.",
+    "target_text": "I can help with order status for order ORD444181.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0025",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD764613",
+      "phone_last4": "0013",
+      "channel": "website"
+    },
+    "customer_utterance": "I need help with order status for ORD764613.",
+    "target_text": "I can help with order status for order ORD764613.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0006",
+    "intent": "product_availability",
+    "slots": {
+      "pincode": "700966",
+      "store_id": "STR2304"
+    },
+    "customer_utterance": "I need help with product availability for my account.",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0101",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD934146",
+      "expected_delivery_date": "2026-06-06"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD934146.",
+    "target_text": "I can help with delivery delay for order ORD934146.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0277",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD188322",
+      "phone_last4": "3814",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD188322.",
+    "target_text": "I can help with order status for order ORD188322.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0183",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD554093",
+      "invoice_type": "standard",
+      "email": "customer859@example.com"
+    },
+    "customer_utterance": "I need help with invoice request for ORD554093.",
+    "target_text": "I can help with invoice request for order ORD554093.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0331",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD435039",
+      "complaint_type": "missing_item",
+      "products": [
+        "eggs",
+        "bananas"
+      ],
+      "description": "one item was missing"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD435039.",
+    "target_text": "I can help with complaint registration for order ORD435039.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0003",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "curd",
+        "cooking oil",
+        "detergent"
+      ],
+      "pincode": "380972",
+      "store_id": "STR3532"
+    },
+    "customer_utterance": "I need help with product availability for ['curd', 'cooking oil', 'detergent'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0181",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD544599"
+    },
+    "customer_utterance": "I need help with cancel order for ORD544599.",
+    "target_text": "I can help with cancel order for order ORD544599.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0106",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD200081",
+      "new_address": "Tower B, Prestige Park",
+      "city": "Pune",
+      "pincode": "600274"
+    },
+    "customer_utterance": "I need help with delivery address update for ORD200081.",
+    "target_text": "I can help with delivery address update for order ORD200081.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0284",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD986736",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "tomatoes"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD986736.",
+    "target_text": "I can help with cancel order for order ORD986736.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0226",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD363677",
+      "expected_delivery_date": "2026-06-08",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Hyderabad"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD363677.",
+    "target_text": "I can help with delivery delay for order ORD363677.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0166",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD881288",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Bengaluru",
+      "pincode": "380513"
+    },
+    "customer_utterance": "I need help with delivery address update for ORD881288.",
+    "target_text": "I can help with delivery address update for order ORD881288.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0100",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD364370",
+      "complaint_type": "wrong_item",
+      "products": [
+        "eggs"
+      ],
+      "description": "one item was missing"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD364370.",
+    "target_text": "I can help with complaint registration for order ORD364370.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0297",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD865760",
+      "products": [
+        "cooking oil"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "red color"
+    },
+    "customer_utterance": "I need help with exchange item for ORD865760.",
+    "target_text": "I can help with exchange item for order ORD865760.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0063",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD265100",
+      "transaction_id": "TXN44668987",
+      "payment_method": "UPI",
+      "issue_type": "payment_failed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD265100.",
+    "target_text": "I can help with payment issue for order ORD265100.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0121",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD940669",
+      "phone_last4": "3791",
+      "channel": "store"
+    },
+    "customer_utterance": "I need help with order status for ORD940669.",
+    "target_text": "I can help with order status for order ORD940669.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0278",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD539776",
+      "products": [
+        "green tea",
+        "pressure cooker"
+      ],
+      "exchange_reason": "wrong size",
+      "preferred_variant": "size L"
+    },
+    "customer_utterance": "I need help with exchange item for ORD539776.",
+    "target_text": "I can help with exchange item for order ORD539776.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0001",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD953809",
+      "new_address": "Office reception desk",
+      "city": null,
+      "pincode": "400633"
+    },
+    "customer_utterance": "I need help with delivery address update for ORD953809.",
+    "target_text": "I can help with delivery address update for order ORD953809.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0032",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD899808",
+      "invoice_type": "duplicate_copy",
+      "email": "customer573@example.com",
+      "ambiguous_reference": "same item"
+    },
+    "customer_utterance": "Can you help with same item?",
+    "target_text": "I can help with invoice request for order ORD899808.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0290",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD690320"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD690320.",
+    "target_text": "I can help with complaint registration for order ORD690320.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0155",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "12345",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "baby diapers",
+        "baby diapers"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for 12345.",
+    "target_text": "I can help with cancel order for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0219",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD870005",
+      "complaint_type": "poor_quality",
+      "products": [
+        "baby diapers"
+      ],
+      "description": "product was stale"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD870005.",
+    "target_text": "I can help with complaint registration for order ORD870005.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0269",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD977242",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Kolkata",
+      "pincode": "122673"
+    },
+    "customer_utterance": "I need help with delivery address update for ORD977242.",
+    "target_text": "I can help with delivery address update for order ORD977242.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0395",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "12345",
+      "invoice_type": "GST",
+      "email": "customer180@example.com",
+      "ambiguous_reference": "same item"
+    },
+    "customer_utterance": "Can you help with same item?",
+    "target_text": "I can help with invoice request for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0305",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD266552",
+      "complaint_type": "late_delivery",
+      "products": [
+        "shampoo",
+        "green tea",
+        "shampoo"
+      ]
+    },
+    "customer_utterance": "I need help with complaint registration for ORD266552.",
+    "target_text": "I can help with complaint registration for order ORD266552.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  },
+  {
+    "sample_id": "SMP0119",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": null,
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Hyderabad"
+    },
+    "customer_utterance": "I need help with delivery delay for None.",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "source": "synthetic_weighted_business_distribution",
+      "split": "train"
+    }
+  }
+]
