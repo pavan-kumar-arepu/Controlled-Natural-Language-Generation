@@ -1,0 +1,4382 @@
+[
+  {
+    "sample_id": "SMP0262",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD645978",
+      "products": [
+        "bread",
+        "apples"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD645978 <sep> pickup_address : same as delivery address <sep> products : bread | apples <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD645978.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0339",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD354604",
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD354604 <sep> pickup_address : same as delivery address <sep> return_reason : damaged item <sep> missing_slots : products [EOS]",
+    "target_text": "I can help with return item for order ORD354604.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0218",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD482838",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "potatoes",
+        "toothpaste"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD482838 <sep> products : potatoes | toothpaste [EOS]",
+    "target_text": "I can help with cancel order for order ORD482838.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0231",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN61067",
+      "order_id": "ORD656898",
+      "payment_method": "credit_card"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD656898 <sep> payment_method : credit_card <sep> refund_id : RFN61067 [EOS]",
+    "target_text": "I can help with refund status for order ORD656898.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0041",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD939916"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> order_id : ORD939916 [EOS]",
+    "target_text": "I can help with order status for order ORD939916.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0027",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD196403",
+      "invoice_type": "standard",
+      "email": "customer684@example.com"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> email : customer684@example.com <sep> invoice_type : standard <sep> order_id : ORD196403 [EOS]",
+    "target_text": "I can help with invoice request for order ORD196403.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0004",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "basmati rice"
+      ],
+      "pincode": "380510",
+      "store_id": "STR8563"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 380510 <sep> products : basmati rice <sep> store_id : STR8563 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0279",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "bread",
+        "shampoo"
+      ],
+      "pincode": "560515",
+      "store_id": "STR8701"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 560515 <sep> products : bread | shampoo <sep> store_id : STR8701 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0213",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FREESHIP",
+      "order_id": "ORD454029",
+      "cart_value": 2213
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 2213 <sep> coupon_code : FREESHIP <sep> order_id : ORD454029 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD454029.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0232",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD735800",
+      "phone_last4": "2120",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD735800 <sep> phone_last4 : 2120 [EOS]",
+    "target_text": "I can help with order status for order ORD735800.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0332",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD625943",
+      "expected_delivery_date": "2026-06-13",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": null
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : [NULL] <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-13 <sep> order_id : ORD625943 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD625943.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0062",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "bananas",
+        "bananas"
+      ],
+      "pincode": "",
+      "store_id": "STR5476"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : [EMPTY] <sep> products : bananas | bananas <sep> store_id : STR5476 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0282",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD993475",
+      "products": [
+        "green tea",
+        "shampoo"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD993475 <sep> pickup_address : same as delivery address <sep> products : green tea | shampoo <sep> return_reason : wrong item delivered [EOS]",
+    "target_text": "I can help with return item for order ORD993475.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0293",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD468637",
+      "products": [
+        "potatoes"
+      ],
+      "exchange_reason": "wrong size",
+      "preferred_variant": "1 kg pack"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong size <sep> order_id : ORD468637 <sep> preferred_variant : 1 kg pack <sep> products : potatoes [EOS]",
+    "target_text": "I can help with exchange item for order ORD468637.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0340",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD725156",
+      "transaction_id": "TXN73312215",
+      "payment_method": "wallet",
+      "issue_type": "payment_failed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD725156 <sep> payment_method : wallet <sep> transaction_id : TXN73312215 [EOS]",
+    "target_text": "I can help with payment issue for order ORD725156.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0343",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD661482",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Pune"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Pune <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-12 <sep> order_id : ORD661482 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD661482.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0354",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD701778",
+      "products": [
+        "pressure cooker",
+        "shampoo"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 AM - 8 AM <sep> order_id : ORD701778 <sep> products : pressure cooker | shampoo <sep> quantity_change : add 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD701778.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0192",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "411223",
+      "store_type": "pickup_point"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Mumbai <sep> pincode : 411223 <sep> store_type : pickup_point [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0108",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD579736",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Mumbai",
+      "pincode": "380147"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Mumbai <sep> new_address : Flat 402, Lake View Apt <sep> order_id : ORD579736 <sep> pincode : 380147 [EOS]",
+    "target_text": "I can help with delivery address update for order ORD579736.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0142",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD649156",
+      "products": ""
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> order_id : ORD649156 <sep> products : [EMPTY] [EOS]",
+    "target_text": "I can help with modify order for order ORD649156.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0341",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD533558",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Bengaluru"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Bengaluru <sep> delivery_slot : 6 AM - 8 AM <sep> expected_delivery_date : 2026-06-10 <sep> order_id : ORD533558 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD533558.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0266",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD961734",
+      "products": [
+        "basmati rice",
+        "t-shirt"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 2 PM - 4 PM <sep> order_id : ORD961734 <sep> products : basmati rice | t-shirt <sep> quantity_change : add 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD961734.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0134",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD868414",
+      "transaction_id": "TXN85639903",
+      "payment_method": "cash_on_delivery",
+      "issue_type": "payment_failed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD868414 <sep> payment_method : cash_on_delivery <sep> transaction_id : TXN85639903 [EOS]",
+    "target_text": "I can help with payment issue for order ORD868414.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0330",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD749649",
+      "products": [
+        "toothpaste",
+        "paneer",
+        "potatoes"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD749649 <sep> pickup_address : same as delivery address <sep> products : toothpaste | paneer | potatoes <sep> return_reason : wrong item delivered [EOS]",
+    "target_text": "I can help with return item for order ORD749649.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0399",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD978733",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "curd"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD978733 <sep> products : curd [EOS]",
+    "target_text": "I can help with cancel order for order ORD978733.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0352",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toor dal"
+      ],
+      "pincode": "",
+      "store_id": "STR5753"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : [EMPTY] <sep> products : toor dal <sep> store_id : STR5753 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0157",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD189475",
+      "expected_delivery_date": "2026-06-14",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Gurugram"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Gurugram <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-14 <sep> order_id : ORD189475 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD189475.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0113",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD653831",
+      "cancellation_reason": "duplicate order",
+      "products": ""
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD653831 <sep> products : [EMPTY] [EOS]",
+    "target_text": "I can help with cancel order for order ORD653831.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0252",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Chennai",
+      "pincode": "411405",
+      "store_type": "pickup_point"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Chennai <sep> pincode : 411405 <sep> store_type : pickup_point [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0033",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD318136",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "eggs"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD318136 <sep> products : eggs [EOS]",
+    "target_text": "I can help with cancel order for order ORD318136.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0038",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORDER-??",
+      "products": [
+        "apples",
+        "baby diapers",
+        "bananas"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORDER-?? <sep> pickup_address : same as delivery address <sep> products : apples | baby diapers | bananas <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORDER-??.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0398",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD224464",
+      "products": [
+        "green tea",
+        "milk",
+        "cooking oil"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD224464 <sep> pickup_address : same as delivery address <sep> products : green tea | milk | cooking oil <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORD224464.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0168",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD369882",
+      "products": [
+        "bread",
+        "paneer"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "red color"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD369882 <sep> preferred_variant : red color <sep> products : bread | paneer [EOS]",
+    "target_text": "I can help with exchange item for order ORD369882.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0234",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD904589",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "toothpaste",
+        "curd"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD904589 <sep> products : toothpaste | curd [EOS]",
+    "target_text": "I can help with cancel order for order ORD904589.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0011",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD934533",
+      "complaint_type": "late_delivery",
+      "products": [
+        "curd",
+        "toothpaste"
+      ],
+      "description": "product was stale"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : product was stale <sep> order_id : ORD934533 <sep> products : curd | toothpaste [EOS]",
+    "target_text": "I can help with complaint registration for order ORD934533.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0209",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD942049",
+      "products": [
+        "basmati rice",
+        "t-shirt",
+        "paneer"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address",
+      "ambiguous_reference": "the last order"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> ambiguous_reference : the last order <sep> order_id : ORD942049 <sep> pickup_address : same as delivery address <sep> products : basmati rice | t-shirt | paneer <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORD942049.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0170",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB69361",
+      "issue_type": "benefit_not_applied",
+      "phone_last4": "3211"
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> issue_type : benefit_not_applied <sep> phone_last4 : 3211 <sep> subscription_id : SUB69361 [EOS]",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0275",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD372452",
+      "products": [
+        "bananas"
+      ],
+      "quantity_change": "increase to 2 packs",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 8 PM - 10 PM <sep> order_id : ORD372452 <sep> products : bananas <sep> quantity_change : increase to 2 packs [EOS]",
+    "target_text": "I can help with modify order for order ORD372452.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0073",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD952786",
+      "cancellation_reason": null,
+      "products": [
+        "basmati rice",
+        "eggs"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : [NULL] <sep> order_id : ORD952786 <sep> products : basmati rice | eggs [EOS]",
+    "target_text": "I can help with cancel order for order ORD952786.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0295",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD470226",
+      "expected_delivery_date": "2026-06-09",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Hyderabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Hyderabad <sep> delivery_slot : 6 AM - 8 AM <sep> expected_delivery_date : 2026-06-09 <sep> order_id : ORD470226 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD470226.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0017",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD569033",
+      "products": [
+        "shampoo",
+        "bananas"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 PM - 8 PM <sep> order_id : ORD569033 <sep> products : shampoo | bananas <sep> quantity_change : add 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD569033.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0366",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD316247",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "green tea"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD316247 <sep> products : green tea [EOS]",
+    "target_text": "I can help with cancel order for order ORD316247.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0249",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD994243",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "apples",
+        "tomatoes"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD994243 <sep> products : apples | tomatoes [EOS]",
+    "target_text": "I can help with cancel order for order ORD994243.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0400",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD312929",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "detergent",
+        "basmati rice"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD312929 <sep> products : detergent | basmati rice [EOS]",
+    "target_text": "I can help with cancel order for order ORD312929.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0182",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD550515",
+      "phone_last4": "3542",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD550515 <sep> phone_last4 : 3542 [EOS]",
+    "target_text": "I can help with order status for order ORD550515.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0201",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "baby diapers",
+        "almonds"
+      ],
+      "pincode": "110490",
+      "store_id": "STR8273"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 110490 <sep> products : baby diapers | almonds <sep> store_id : STR8273 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0151",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "12345",
+      "products": [
+        "baby diapers",
+        "baby diapers"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 AM - 8 AM <sep> order_id : 12345 <sep> products : baby diapers | baby diapers <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0381",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD525685",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": null,
+      "ambiguous_reference": "the last order"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> ambiguous_reference : the last order <sep> city : [NULL] <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-11 <sep> order_id : ORD525685 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD525685.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0076",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB68928",
+      "issue_type": "benefit_not_applied",
+      "phone_last4": "6168"
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> issue_type : benefit_not_applied <sep> phone_last4 : 6168 <sep> subscription_id : SUB68928 [EOS]",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0206",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": null,
+      "products": [
+        "pressure cooker"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 AM - 10 AM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 8 AM - 10 AM <sep> order_id : [NULL] <sep> products : pressure cooker <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0129",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD105340",
+      "transaction_id": "TXN31732545",
+      "payment_method": "wallet",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD105340 <sep> payment_method : wallet <sep> transaction_id : TXN31732545 [EOS]",
+    "target_text": "I can help with payment issue for order ORD105340.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0220",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "tomatoes"
+      ],
+      "pincode": "560922",
+      "store_id": "STR5857"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 560922 <sep> products : tomatoes <sep> store_id : STR5857 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0393",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD934274",
+      "cart_value": 2860
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 2860 <sep> coupon_code : FRESH20 <sep> order_id : ORD934274 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD934274.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0257",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD561002",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Ahmedabad",
+      "products": [
+        "detergent",
+        "pressure cooker",
+        "tomatoes",
+        "detergent"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Ahmedabad <sep> delivery_slot : 6 AM - 8 AM <sep> expected_delivery_date : 2026-06-07 <sep> order_id : ORD561002 <sep> products : detergent | pressure cooker | tomatoes | detergent [EOS]",
+    "target_text": "I can help with delivery delay for order ORD561002.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0043",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": null,
+      "expected_delivery_date": "2026-06-09",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Gurugram"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Gurugram <sep> delivery_slot : 6 AM - 8 AM <sep> expected_delivery_date : 2026-06-09 <sep> order_id : [NULL] [EOS]",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0024",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "curd"
+      ],
+      "pincode": "122953",
+      "store_id": "STR2295"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 122953 <sep> products : curd <sep> store_id : STR2295 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0283",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD219355",
+      "products": [
+        "pressure cooker",
+        "shampoo"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 2 PM - 4 PM <sep> order_id : ORD219355 <sep> products : pressure cooker | shampoo <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD219355.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0133",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD278392",
+      "phone_last4": "4312",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD278392 <sep> phone_last4 : 4312 [EOS]",
+    "target_text": "I can help with order status for order ORD278392.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0323",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD715256",
+      "transaction_id": "TXN45457535",
+      "payment_method": "debit_card",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD715256 <sep> payment_method : debit_card <sep> transaction_id : TXN45457535 [EOS]",
+    "target_text": "I can help with payment issue for order ORD715256.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0141",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD881180",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "basmati rice",
+        "toor dal"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD881180 <sep> products : basmati rice | toor dal [EOS]",
+    "target_text": "I can help with cancel order for order ORD881180.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0329",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD179770",
+      "products": [
+        "t-shirt",
+        "cooking oil"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "10 AM - 12 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 10 AM - 12 PM <sep> order_id : ORD179770 <sep> products : t-shirt | cooking oil <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD179770.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0304",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN78881",
+      "order_id": "ORD886379",
+      "payment_method": "credit_card"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD886379 <sep> payment_method : credit_card <sep> refund_id : RFN78881 [EOS]",
+    "target_text": "I can help with refund status for order ORD886379.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0327",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD652235",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Ahmedabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Ahmedabad <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-11 <sep> order_id : ORD652235 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD652235.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0273",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "potatoes",
+        "cooking oil",
+        "apples"
+      ],
+      "pincode": "700107",
+      "store_id": "STR1676"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 700107 <sep> products : potatoes | cooking oil | apples <sep> store_id : STR1676 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0205",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "122939",
+      "store_type": "",
+      "products": [
+        "shampoo",
+        "bananas"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Mumbai <sep> pincode : 122939 <sep> products : shampoo | bananas <sep> store_type : [EMPTY] [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0036",
+    "intent": "product_availability",
+    "slots": {
+      "pincode": "560698",
+      "store_id": "STR6905"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 560698 <sep> store_id : STR6905 <sep> missing_slots : products [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0135",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB29041",
+      "issue_type": "membership_not_visible",
+      "phone_last4": "4017"
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> issue_type : membership_not_visible <sep> phone_last4 : 4017 <sep> subscription_id : SUB29041 [EOS]",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0012",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": null,
+      "order_id": "ORD972548",
+      "payment_method": "net_banking",
+      "products": [
+        "milk",
+        "toor dal",
+        "onions",
+        "bread"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD972548 <sep> payment_method : net_banking <sep> products : milk | toor dal | onions | bread <sep> refund_id : [NULL] [EOS]",
+    "target_text": "I can help with refund status for order ORD972548.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0077",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD664152",
+      "products": [
+        "apples",
+        "potatoes"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 PM - 8 PM <sep> order_id : ORD664152 <sep> products : apples | potatoes <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD664152.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0379",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN64950",
+      "order_id": "ORD216961",
+      "payment_method": "wallet"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD216961 <sep> payment_method : wallet <sep> refund_id : RFN64950 [EOS]",
+    "target_text": "I can help with refund status for order ORD216961.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0026",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD900949",
+      "complaint_type": "wrong_item",
+      "products": [
+        "toothpaste",
+        "pressure cooker"
+      ],
+      "description": "package was leaking"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : wrong_item <sep> description : package was leaking <sep> order_id : ORD900949 <sep> products : toothpaste | pressure cooker [EOS]",
+    "target_text": "I can help with complaint registration for order ORD900949.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0207",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD478514",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Bengaluru"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Bengaluru <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORD478514 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD478514.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0031",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD360125",
+      "phone_last4": "0377",
+      "channel": "store"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : store <sep> order_id : ORD360125 <sep> phone_last4 : 0377 [EOS]",
+    "target_text": "I can help with order status for order ORD360125.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0255",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB56902",
+      "issue_type": "membership_not_visible",
+      "phone_last4": "0885"
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> issue_type : membership_not_visible <sep> phone_last4 : 0885 <sep> subscription_id : SUB56902 [EOS]",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0048",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD204178",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "potatoes"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD204178 <sep> products : potatoes [EOS]",
+    "target_text": "I can help with cancel order for order ORD204178.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0344",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD545171",
+      "cancellation_reason": "ordered by mistake",
+      "products": "",
+      "ambiguous_reference": "the second one"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> ambiguous_reference : the second one <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD545171 <sep> products : [EMPTY] [EOS]",
+    "target_text": "I can help with cancel order for order ORD545171.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0123",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD769897",
+      "phone_last4": "6923",
+      "channel": "call_center"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : call_center <sep> order_id : ORD769897 <sep> phone_last4 : 6923 [EOS]",
+    "target_text": "I can help with order status for order ORD769897.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0274",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "SAVE100",
+      "order_id": "ORD654440",
+      "cart_value": 3844
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 3844 <sep> coupon_code : SAVE100 <sep> order_id : ORD654440 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD654440.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0044",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORDER-??",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Delhi",
+      "pincode": "600171"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Delhi <sep> new_address : Flat 402, Lake View Apt <sep> order_id : ORDER-?? <sep> pincode : 600171 [EOS]",
+    "target_text": "I can help with delivery address update for order ORDER-??.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0247",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD860590",
+      "products": [
+        "apples",
+        "t-shirt"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD860590 <sep> pickup_address : same as delivery address <sep> products : apples | t-shirt <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD860590.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0294",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD678272",
+      "products": [
+        "tomatoes",
+        "paneer"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD678272 <sep> pickup_address : same as delivery address <sep> products : tomatoes | paneer <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORD678272.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0127",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD814563",
+      "phone_last4": "2703",
+      "channel": "store",
+      "ambiguous_reference": "the last order",
+      "products": [
+        "eggs",
+        "tomatoes",
+        "eggs"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> ambiguous_reference : the last order <sep> channel : store <sep> order_id : ORD814563 <sep> phone_last4 : 2703 <sep> products : eggs | tomatoes | eggs [EOS]",
+    "target_text": "I can help with order status for order ORD814563.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0023",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD420118",
+      "phone_last4": "5269",
+      "channel": "call_center",
+      "products": [
+        "shampoo",
+        "toothpaste",
+        "detergent",
+        "bread"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : call_center <sep> order_id : ORD420118 <sep> phone_last4 : 5269 <sep> products : shampoo | toothpaste | detergent | bread [EOS]",
+    "target_text": "I can help with order status for order ORD420118.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products"
+    ]
+  },
+  {
+    "sample_id": "SMP0377",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD600711",
+      "transaction_id": "TXN10023697",
+      "payment_method": "UPI",
+      "issue_type": "duplicate_charge"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : duplicate_charge <sep> order_id : ORD600711 <sep> payment_method : UPI <sep> transaction_id : TXN10023697 [EOS]",
+    "target_text": "I can help with payment issue for order ORD600711.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0350",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD525321",
+      "products": [
+        "paneer"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "red color"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD525321 <sep> preferred_variant : red color <sep> products : paneer [EOS]",
+    "target_text": "I can help with exchange item for order ORD525321.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0065",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": null
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> subscription_id : [NULL] <sep> missing_slots : issue_type [EOS]",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0349",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD419582",
+      "complaint_type": "late_delivery",
+      "products": [
+        "milk"
+      ],
+      "description": "one item was missing"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : one item was missing <sep> order_id : ORD419582 <sep> products : milk [EOS]",
+    "target_text": "I can help with complaint registration for order ORD419582.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0161",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "tomatoes",
+        "bread"
+      ],
+      "pincode": "122520",
+      "store_id": ""
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 122520 <sep> products : tomatoes | bread <sep> store_id : [EMPTY] [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0185",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD484583",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "basmati rice",
+        "toothpaste"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD484583 <sep> products : basmati rice | toothpaste [EOS]",
+    "target_text": "I can help with cancel order for order ORD484583.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0139",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD276955",
+      "phone_last4": "2343",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD276955 <sep> phone_last4 : 2343 [EOS]",
+    "target_text": "I can help with order status for order ORD276955.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0072",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD318321",
+      "products": [
+        "bananas"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "size L"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : defective item <sep> order_id : ORD318321 <sep> preferred_variant : size L <sep> products : bananas [EOS]",
+    "target_text": "I can help with exchange item for order ORD318321.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0362",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD939321",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Mumbai"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-12 <sep> order_id : ORD939321 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD939321.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0258",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD484124",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Mumbai"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : 8 AM - 10 AM <sep> expected_delivery_date : 2026-06-07 <sep> order_id : ORD484124 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD484124.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0071",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD335286",
+      "cancellation_reason": "delivery too late",
+      "products": ""
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD335286 <sep> products : [EMPTY] [EOS]",
+    "target_text": "I can help with cancel order for order ORD335286.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0092",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "detergent",
+        "atta",
+        "green tea"
+      ],
+      "pincode": "400368",
+      "store_id": "STR6427"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 400368 <sep> products : detergent | atta | green tea <sep> store_id : STR6427 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0015",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FREESHIP",
+      "order_id": "ORD259812",
+      "cart_value": 1838
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 1838 <sep> coupon_code : FREESHIP <sep> order_id : ORD259812 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD259812.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0321",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD424834",
+      "phone_last4": "8764",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD424834 <sep> phone_last4 : 8764 [EOS]",
+    "target_text": "I can help with order status for order ORD424834.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0120",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD504431",
+      "expected_delivery_date": "2026-06-13",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Mumbai"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : 6 AM - 8 AM <sep> expected_delivery_date : 2026-06-13 <sep> order_id : ORD504431 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD504431.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0128",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD239812",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Ahmedabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Ahmedabad <sep> delivery_slot : 6 AM - 8 AM <sep> expected_delivery_date : 2026-06-10 <sep> order_id : ORD239812 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD239812.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0276",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD954165",
+      "phone_last4": "8585",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD954165 <sep> phone_last4 : 8585 [EOS]",
+    "target_text": "I can help with order status for order ORD954165.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0178",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN15135",
+      "order_id": "ORD425526",
+      "payment_method": "net_banking"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD425526 <sep> payment_method : net_banking <sep> refund_id : RFN15135 [EOS]",
+    "target_text": "I can help with refund status for order ORD425526.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0047",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD628830",
+      "complaint_type": "missing_item",
+      "products": [
+        "paneer",
+        "toor dal"
+      ],
+      "description": "one item was missing"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : missing_item <sep> description : one item was missing <sep> order_id : ORD628830 <sep> products : paneer | toor dal [EOS]",
+    "target_text": "I can help with complaint registration for order ORD628830.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0196",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN14261",
+      "order_id": "ORD308627",
+      "payment_method": "wallet"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD308627 <sep> payment_method : wallet <sep> refund_id : RFN14261 [EOS]",
+    "target_text": "I can help with refund status for order ORD308627.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0144",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD769997",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "detergent"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD769997 <sep> products : detergent [EOS]",
+    "target_text": "I can help with cancel order for order ORD769997.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0239",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD955510",
+      "products": [
+        "bread",
+        "milk"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 PM - 8 PM <sep> order_id : ORD955510 <sep> products : bread | milk <sep> quantity_change : add 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD955510.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0035",
+    "intent": "order_status",
+    "slots": {
+      "phone_last4": "5984",
+      "channel": "app",
+      "products": [
+        "potatoes",
+        "almonds",
+        "potatoes"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> phone_last4 : 5984 <sep> products : potatoes | almonds | potatoes <sep> missing_slots : order_id [EOS]",
+    "target_text": "I can help with order status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0117",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "onions",
+        "baby diapers",
+        "onions"
+      ],
+      "pincode": "411185",
+      "store_id": "STR9173"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 411185 <sep> products : onions | baby diapers | onions <sep> store_id : STR9173 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0353",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN15682",
+      "order_id": null,
+      "payment_method": "credit_card"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : [NULL] <sep> payment_method : credit_card <sep> refund_id : RFN15682 [EOS]",
+    "target_text": "I can help with refund status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0317",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toor dal"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> products : toor dal [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0389",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD877301",
+      "phone_last4": "8495",
+      "channel": "website"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD877301 <sep> phone_last4 : 8495 [EOS]",
+    "target_text": "I can help with order status for order ORD877301.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0163",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD999694",
+      "products": [
+        "shampoo",
+        "apples",
+        "onions"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD999694 <sep> pickup_address : same as delivery address <sep> products : shampoo | apples | onions <sep> return_reason : wrong item delivered [EOS]",
+    "target_text": "I can help with return item for order ORD999694.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0348",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD419852",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "shampoo",
+        "eggs"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD419852 <sep> products : shampoo | eggs [EOS]",
+    "target_text": "I can help with cancel order for order ORD419852.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0312",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD219097",
+      "complaint_type": "late_delivery",
+      "products": [
+        "detergent"
+      ],
+      "description": "package was leaking"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : package was leaking <sep> order_id : ORD219097 <sep> products : detergent [EOS]",
+    "target_text": "I can help with complaint registration for order ORD219097.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0371",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD919399",
+      "complaint_type": "late_delivery",
+      "products": [
+        "almonds",
+        "cooking oil"
+      ],
+      "description": "package was leaking"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : package was leaking <sep> order_id : ORD919399 <sep> products : almonds | cooking oil [EOS]",
+    "target_text": "I can help with complaint registration for order ORD919399.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0191",
+    "intent": "delivery_delay",
+    "slots": {
+      "expected_delivery_date": "2026-06-13",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Pune",
+      "products": [
+        "green tea",
+        "curd",
+        "detergent",
+        "shampoo"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Pune <sep> delivery_slot : 8 AM - 10 AM <sep> expected_delivery_date : 2026-06-13 <sep> products : green tea | curd | detergent | shampoo <sep> missing_slots : order_id [EOS]",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0086",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD532645",
+      "products": [
+        "t-shirt",
+        "curd"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "size L"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : defective item <sep> order_id : ORD532645 <sep> preferred_variant : size L <sep> products : t-shirt | curd [EOS]",
+    "target_text": "I can help with exchange item for order ORD532645.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0254",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD221012",
+      "invoice_type": "GST",
+      "email": "customer677@example.com"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> email : customer677@example.com <sep> invoice_type : GST <sep> order_id : ORD221012 [EOS]",
+    "target_text": "I can help with invoice request for order ORD221012.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0124",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD860216",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Hyderabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Hyderabad <sep> delivery_slot : 8 AM - 10 AM <sep> expected_delivery_date : 2026-06-11 <sep> order_id : ORD860216 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD860216.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0250",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD387515",
+      "phone_last4": "8778",
+      "channel": "website"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD387515 <sep> phone_last4 : 8778 [EOS]",
+    "target_text": "I can help with order status for order ORD387515.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0186",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "12345",
+      "products": [
+        "t-shirt",
+        "bread"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : 12345 <sep> pickup_address : same as delivery address <sep> products : t-shirt | bread <sep> return_reason : wrong item delivered [EOS]",
+    "target_text": "I can help with return item for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0167",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD391159",
+      "complaint_type": "poor_quality",
+      "products": [
+        "shampoo"
+      ],
+      "description": "package was leaking"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : poor_quality <sep> description : package was leaking <sep> order_id : ORD391159 <sep> products : shampoo [EOS]",
+    "target_text": "I can help with complaint registration for order ORD391159.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0091",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD303171",
+      "products": [
+        "almonds",
+        "atta"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD303171 <sep> pickup_address : same as delivery address <sep> products : almonds | atta <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD303171.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0397",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD852549",
+      "products": [
+        "green tea",
+        "pressure cooker",
+        "basmati rice"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD852549 <sep> pickup_address : same as delivery address <sep> products : green tea | pressure cooker | basmati rice <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD852549.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0030",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "eggs",
+        "almonds"
+      ],
+      "pincode": "500985",
+      "store_id": "STR2142"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 500985 <sep> products : eggs | almonds <sep> store_id : STR2142 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0094",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD489034",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Gurugram",
+      "pincode": "411125"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Gurugram <sep> new_address : Flat 402, Lake View Apt <sep> order_id : ORD489034 <sep> pincode : 411125 [EOS]",
+    "target_text": "I can help with delivery address update for order ORD489034.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0355",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD351437",
+      "products": [
+        "bananas",
+        "paneer",
+        "atta"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD351437 <sep> pickup_address : same as delivery address <sep> products : bananas | paneer | atta <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD351437.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0008",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD167379",
+      "expected_delivery_date": "2026-06-08",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Mumbai"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-08 <sep> order_id : ORD167379 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD167379.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0322",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD282877",
+      "transaction_id": "TXN70170162",
+      "payment_method": "cash_on_delivery",
+      "issue_type": "duplicate_charge"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : duplicate_charge <sep> order_id : ORD282877 <sep> payment_method : cash_on_delivery <sep> transaction_id : TXN70170162 [EOS]",
+    "target_text": "I can help with payment issue for order ORD282877.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0281",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD382879",
+      "transaction_id": "TXN79886405",
+      "payment_method": "debit_card",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD382879 <sep> payment_method : debit_card <sep> transaction_id : TXN79886405 [EOS]",
+    "target_text": "I can help with payment issue for order ORD382879.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0171",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD431577"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> order_id : ORD431577 [EOS]",
+    "target_text": "I can help with cancel order for order ORD431577.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0267",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN61021",
+      "order_id": "ORD664241",
+      "payment_method": "UPI"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD664241 <sep> payment_method : UPI <sep> refund_id : RFN61021 [EOS]",
+    "target_text": "I can help with refund status for order ORD664241.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0386",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD406634",
+      "cart_value": 1288
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 1288 <sep> coupon_code : FRESH20 <sep> order_id : ORD406634 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD406634.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0118",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD604782",
+      "new_address": "Office reception desk",
+      "city": "Delhi",
+      "pincode": "122181"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Delhi <sep> new_address : Office reception desk <sep> order_id : ORD604782 <sep> pincode : 122181 [EOS]",
+    "target_text": "I can help with delivery address update for order ORD604782.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0045",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "milk"
+      ],
+      "pincode": "560516",
+      "store_id": "ORD"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 560516 <sep> products : milk <sep> store_id : ORD [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0376",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD195531",
+      "products": [
+        "toor dal",
+        "green tea",
+        "bananas"
+      ],
+      "return_reason": null,
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD195531 <sep> pickup_address : same as delivery address <sep> products : toor dal | green tea | bananas <sep> return_reason : [NULL] [EOS]",
+    "target_text": "I can help with return item for order ORD195531.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0068",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD524690",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Kolkata"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Kolkata <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORD524690 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD524690.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0256",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD592481",
+      "complaint_type": "wrong_item"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : wrong_item <sep> order_id : ORD592481 [EOS]",
+    "target_text": "I can help with complaint registration for order ORD592481.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0105",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "paneer",
+        "eggs"
+      ],
+      "pincode": "700570",
+      "store_id": "STR4456"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 700570 <sep> products : paneer | eggs <sep> store_id : STR4456 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0237",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD813466",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "t-shirt"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD813466 <sep> products : t-shirt [EOS]",
+    "target_text": "I can help with cancel order for order ORD813466.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0087",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "WEEKEND200",
+      "order_id": "ORD278565",
+      "cart_value": 462
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 462 <sep> coupon_code : WEEKEND200 <sep> order_id : ORD278565 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD278565.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0039",
+    "intent": "return_item",
+    "slots": {
+      "products": [
+        "toor dal",
+        "bread",
+        "pressure cooker"
+      ],
+      "return_reason": null,
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> pickup_address : same as delivery address <sep> products : toor dal | bread | pressure cooker <sep> return_reason : [NULL] <sep> missing_slots : order_id [EOS]",
+    "target_text": "I can help with return item. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0365",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Delhi",
+      "pincode": "122410",
+      "store_type": "pickup_point"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Delhi <sep> pincode : 122410 <sep> store_type : pickup_point [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0338",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD667846",
+      "phone_last4": "1504",
+      "channel": "",
+      "products": [
+        "paneer",
+        "curd",
+        "paneer"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : [EMPTY] <sep> order_id : ORD667846 <sep> phone_last4 : 1504 <sep> products : paneer | curd | paneer [EOS]",
+    "target_text": "I can help with order status for order ORD667846.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0194",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD498641",
+      "products": [
+        "atta"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 2 PM - 4 PM <sep> order_id : ORD498641 <sep> products : atta <sep> quantity_change : add 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD498641.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0054",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD477930",
+      "products": [
+        "bananas"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "2 PM - 4 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 2 PM - 4 PM <sep> order_id : ORD477930 <sep> products : bananas <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD477930.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0280",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "110429",
+      "store_type": "express_store"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Mumbai <sep> pincode : 110429 <sep> store_type : express_store [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0382",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD628019",
+      "products": [
+        "milk",
+        "milk"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 PM - 8 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 PM - 8 PM <sep> order_id : ORD628019 <sep> products : milk | milk <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD628019.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0208",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN76840",
+      "order_id": "ORD485725",
+      "payment_method": "debit_card",
+      "products": [
+        "green tea",
+        "green tea"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD485725 <sep> payment_method : debit_card <sep> products : green tea | green tea <sep> refund_id : RFN76840 [EOS]",
+    "target_text": "I can help with refund status for order ORD485725.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0203",
+    "intent": "cancel_order",
+    "slots": {
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "onions"
+      ],
+      "order_id": "12345"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : 12345 <sep> products : onions [EOS]",
+    "target_text": "I can help with cancel order for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot",
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0056",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD986652",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "almonds"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD986652 <sep> products : almonds [EOS]",
+    "target_text": "I can help with cancel order for order ORD986652.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0189",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD854753",
+      "invoice_type": "standard",
+      "email": "customer684@example.com"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> email : customer684@example.com <sep> invoice_type : standard <sep> order_id : ORD854753 [EOS]",
+    "target_text": "I can help with invoice request for order ORD854753.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0190",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD428089",
+      "products": [
+        "curd",
+        "baby diapers"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "red color"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : defective item <sep> order_id : ORD428089 <sep> preferred_variant : red color <sep> products : curd | baby diapers [EOS]",
+    "target_text": "I can help with exchange item for order ORD428089.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0372",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB85904",
+      "issue_type": "renewal_failed",
+      "phone_last4": "1989"
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> issue_type : renewal_failed <sep> phone_last4 : 1989 <sep> subscription_id : SUB85904 [EOS]",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0099",
+    "intent": "product_availability",
+    "slots": {
+      "products": "",
+      "pincode": "500660",
+      "store_id": "STR6890"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 500660 <sep> products : [EMPTY] <sep> store_id : STR6890 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0083",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "basmati rice"
+      ],
+      "pincode": "110164",
+      "store_id": "STR8088"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 110164 <sep> products : basmati rice <sep> store_id : STR8088 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0259",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD125361",
+      "transaction_id": "",
+      "payment_method": "net_banking",
+      "issue_type": "payment_failed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD125361 <sep> payment_method : net_banking <sep> transaction_id : [EMPTY] [EOS]",
+    "target_text": "I can help with payment issue for order ORD125361.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0057",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD320903",
+      "ambiguous_reference": "same item"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> ambiguous_reference : same item <sep> order_id : ORD320903 [EOS]",
+    "target_text": "I can help with order status for order ORD320903.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0324",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD964093",
+      "products": [
+        "milk",
+        "bananas",
+        "apples",
+        "potatoes"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": ""
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD964093 <sep> pickup_address : [EMPTY] <sep> products : milk | bananas | apples | potatoes <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD964093.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0336",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD374160",
+      "products": [
+        "potatoes",
+        "almonds"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD374160 <sep> pickup_address : same as delivery address <sep> products : potatoes | almonds <sep> return_reason : wrong item delivered [EOS]",
+    "target_text": "I can help with return item for order ORD374160.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0132",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD136903",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Pune"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Pune <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-11 <sep> order_id : ORD136903 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD136903.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0159",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "12345",
+      "products": [
+        "t-shirt",
+        "apples"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "size L"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : 12345 <sep> preferred_variant : size L <sep> products : t-shirt | apples [EOS]",
+    "target_text": "I can help with exchange item for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0345",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD943581",
+      "products": [
+        "milk",
+        "basmati rice"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": ""
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD943581 <sep> preferred_variant : [EMPTY] <sep> products : milk | basmati rice [EOS]",
+    "target_text": "I can help with exchange item for order ORD943581.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0314",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "green tea",
+        "almonds"
+      ],
+      "pincode": "110354",
+      "store_id": "STR1024"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 110354 <sep> products : green tea | almonds <sep> store_id : STR1024 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0302",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD669311",
+      "products": [
+        "tomatoes"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 AM - 8 AM <sep> order_id : ORD669311 <sep> products : tomatoes <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD669311.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0369",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD615486",
+      "products": [
+        "tomatoes",
+        "potatoes",
+        "toor dal"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD615486 <sep> pickup_address : same as delivery address <sep> products : tomatoes | potatoes | toor dal <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORD615486.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0148",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "INVALID_ID",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Gurugram"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Gurugram <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-06 <sep> order_id : INVALID_ID [EOS]",
+    "target_text": "I can help with delivery delay for order INVALID_ID.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0107",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD491699",
+      "products": [
+        "bananas"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 8 PM - 10 PM <sep> order_id : ORD491699 <sep> products : bananas <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD491699.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0233",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD826408",
+      "complaint_type": "poor_quality",
+      "products": [
+        "basmati rice"
+      ],
+      "description": ""
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : poor_quality <sep> description : [EMPTY] <sep> order_id : ORD826408 <sep> products : basmati rice [EOS]",
+    "target_text": "I can help with complaint registration for order ORD826408.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0188",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD476992",
+      "transaction_id": "TXN95047514",
+      "issue_type": "duplicate_charge"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : duplicate_charge <sep> order_id : ORD476992 <sep> transaction_id : TXN95047514 <sep> missing_slots : payment_method [EOS]",
+    "target_text": "I can help with payment issue for order ORD476992.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0090",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD286201",
+      "transaction_id": "TXN38933672",
+      "payment_method": "credit_card",
+      "issue_type": "payment_failed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD286201 <sep> payment_method : credit_card <sep> transaction_id : TXN38933672 [EOS]",
+    "target_text": "I can help with payment issue for order ORD286201.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0138",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD296349",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Mumbai"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-10 <sep> order_id : ORD296349 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD296349.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0067",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD640915",
+      "phone_last4": "9569",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD640915 <sep> phone_last4 : 9569 [EOS]",
+    "target_text": "I can help with order status for order ORD640915.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0241",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD955648",
+      "products": [
+        "curd",
+        "green tea",
+        "curd"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD955648 <sep> pickup_address : same as delivery address <sep> products : curd | green tea | curd <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD955648.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0289",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD647050",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Pune"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Pune <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-12 <sep> order_id : ORD647050 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD647050.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0184",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD152154",
+      "products": [
+        "paneer",
+        "eggs"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD152154 <sep> pickup_address : same as delivery address <sep> products : paneer | eggs <sep> return_reason : wrong item delivered [EOS]",
+    "target_text": "I can help with return item for order ORD152154.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0217",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD226090",
+      "products": [
+        "eggs"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 8 PM - 10 PM <sep> order_id : ORD226090 <sep> products : eggs <sep> quantity_change : add 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD226090.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0058",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD963551",
+      "transaction_id": "TXN55715539",
+      "payment_method": "UPI",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD963551 <sep> payment_method : UPI <sep> transaction_id : TXN55715539 [EOS]",
+    "target_text": "I can help with payment issue for order ORD963551.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0176",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD823482",
+      "phone_last4": "6091",
+      "channel": "website"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD823482 <sep> phone_last4 : 6091 [EOS]",
+    "target_text": "I can help with order status for order ORD823482.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0313",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD972488",
+      "products": [
+        "t-shirt",
+        "detergent"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD972488 <sep> pickup_address : same as delivery address <sep> products : t-shirt | detergent <sep> return_reason : wrong item delivered [EOS]",
+    "target_text": "I can help with return item for order ORD972488.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0291",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD112410",
+      "products": [
+        "paneer",
+        "onions",
+        "tomatoes",
+        "paneer"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD112410 <sep> pickup_address : same as delivery address <sep> products : paneer | onions | tomatoes | paneer <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD112410.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0396",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Chennai",
+      "pincode": "700741",
+      "store_type": "pickup_point"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Chennai <sep> pincode : 700741 <sep> store_type : pickup_point [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0010",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Mumbai",
+      "pincode": "400582",
+      "store_type": "pickup_point"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Mumbai <sep> pincode : 400582 <sep> store_type : pickup_point [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0140",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD178792",
+      "products": [
+        "green tea",
+        "onions"
+      ],
+      "quantity_change": "add 1 unit",
+      "delivery_slot": "6 AM - 8 AM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 6 AM - 8 AM <sep> order_id : ORD178792 <sep> products : green tea | onions <sep> quantity_change : add 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD178792.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0081",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD422445",
+      "transaction_id": "TXN34925302",
+      "payment_method": "UPI",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD422445 <sep> payment_method : UPI <sep> transaction_id : TXN34925302 [EOS]",
+    "target_text": "I can help with payment issue for order ORD422445.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0051",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD981559",
+      "products": [
+        "tomatoes",
+        "shampoo"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "1 kg pack"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD981559 <sep> preferred_variant : 1 kg pack <sep> products : tomatoes | shampoo [EOS]",
+    "target_text": "I can help with exchange item for order ORD981559.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "multiple_products"
+    ]
+  },
+  {
+    "sample_id": "SMP0391",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD260112",
+      "phone_last4": "8685",
+      "channel": "store"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : store <sep> order_id : ORD260112 <sep> phone_last4 : 8685 [EOS]",
+    "target_text": "I can help with order status for order ORD260112.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0236",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD925550",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Mumbai"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : 8 AM - 10 AM <sep> expected_delivery_date : 2026-06-07 <sep> order_id : ORD925550 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD925550.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0175",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN87744",
+      "order_id": "ORD833630",
+      "payment_method": "cash_on_delivery"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD833630 <sep> payment_method : cash_on_delivery <sep> refund_id : RFN87744 [EOS]",
+    "target_text": "I can help with refund status for order ORD833630.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0384",
+    "intent": "modify_order",
+    "slots": {
+      "products": [
+        "shampoo"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 PM - 10 PM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 8 PM - 10 PM <sep> products : shampoo <sep> quantity_change : remove 1 unit <sep> missing_slots : order_id [EOS]",
+    "target_text": "I can help with modify order. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0199",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD337693",
+      "products": [
+        "apples"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> order_id : ORD337693 <sep> products : apples [EOS]",
+    "target_text": "I can help with exchange item for order ORD337693.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0093",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN71788",
+      "order_id": "ORD272787",
+      "payment_method": "UPI"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD272787 <sep> payment_method : UPI <sep> refund_id : RFN71788 [EOS]",
+    "target_text": "I can help with refund status for order ORD272787.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0367",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD833244",
+      "cart_value": 1838
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 1838 <sep> coupon_code : FRESH20 <sep> order_id : ORD833244 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD833244.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0046",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD162548",
+      "complaint_type": "poor_quality"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : poor_quality <sep> order_id : ORD162548 [EOS]",
+    "target_text": "I can help with complaint registration for order ORD162548.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0137",
+    "intent": "order_status",
+    "slots": {
+      "order_id": null
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> order_id : [NULL] [EOS]",
+    "target_text": "I can help with order status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0251",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Pune",
+      "pincode": "122458",
+      "store_type": "express_store"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Pune <sep> pincode : 122458 <sep> store_type : express_store [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0037",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD558812",
+      "phone_last4": "2009",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD558812 <sep> phone_last4 : 2009 [EOS]",
+    "target_text": "I can help with order status for order ORD558812.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0013",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD292881",
+      "expected_delivery_date": "2026-06-11",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Kolkata"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Kolkata <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-11 <sep> order_id : ORD292881 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD292881.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0325",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD912123",
+      "phone_last4": "4114",
+      "channel": "store"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : store <sep> order_id : ORD912123 <sep> phone_last4 : 4114 [EOS]",
+    "target_text": "I can help with order status for order ORD912123.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0296",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD170942",
+      "transaction_id": "TXN91067823",
+      "payment_method": "net_banking",
+      "issue_type": "payment_failed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD170942 <sep> payment_method : net_banking <sep> transaction_id : TXN91067823 [EOS]",
+    "target_text": "I can help with payment issue for order ORD170942.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0115",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB44343",
+      "issue_type": "benefit_not_applied",
+      "phone_last4": "6023"
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> issue_type : benefit_not_applied <sep> phone_last4 : 6023 <sep> subscription_id : SUB44343 [EOS]",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0198",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN38048",
+      "order_id": "ORD519464",
+      "payment_method": "net_banking"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD519464 <sep> payment_method : net_banking <sep> refund_id : RFN38048 [EOS]",
+    "target_text": "I can help with refund status for order ORD519464.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0110",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD154193",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Chennai"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Chennai <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-07 <sep> order_id : ORD154193 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD154193.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0357",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD426679",
+      "transaction_id": "TXN71399271",
+      "payment_method": "debit_card",
+      "issue_type": "payment_failed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD426679 <sep> payment_method : debit_card <sep> transaction_id : TXN71399271 [EOS]",
+    "target_text": "I can help with payment issue for order ORD426679.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0187",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN48552",
+      "order_id": "ORD827389",
+      "payment_method": "cash_on_delivery"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD827389 <sep> payment_method : cash_on_delivery <sep> refund_id : RFN48552 [EOS]",
+    "target_text": "I can help with refund status for order ORD827389.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0064",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD846856",
+      "products": [
+        "curd",
+        "atta",
+        "almonds",
+        "pressure cooker"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address",
+      "ambiguous_reference": "yesterday delivery"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> ambiguous_reference : yesterday delivery <sep> order_id : ORD846856 <sep> pickup_address : same as delivery address <sep> products : curd | atta | almonds | pressure cooker <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORD846856.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "multiple_products"
+    ]
+  },
+  {
+    "sample_id": "SMP0308",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": "ORD",
+      "products": [
+        "onions",
+        "paneer"
+      ],
+      "quantity_change": "remove 1 unit",
+      "delivery_slot": "8 AM - 10 AM"
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> delivery_slot : 8 AM - 10 AM <sep> order_id : ORD <sep> products : onions | paneer <sep> quantity_change : remove 1 unit [EOS]",
+    "target_text": "I can help with modify order for order ORD.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0050",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "pressure cooker",
+        "detergent",
+        "baby diapers"
+      ],
+      "pincode": "560538",
+      "store_id": "STR2953"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 560538 <sep> products : pressure cooker | detergent | baby diapers <sep> store_id : STR2953 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0230",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD240094",
+      "phone_last4": "9743",
+      "channel": "store",
+      "ambiguous_reference": "the second one"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> ambiguous_reference : the second one <sep> channel : store <sep> order_id : ORD240094 <sep> phone_last4 : 9743 [EOS]",
+    "target_text": "I can help with order status for order ORD240094.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0374",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD656239",
+      "complaint_type": "missing_item",
+      "products": [
+        "detergent"
+      ],
+      "description": "one item was missing"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : missing_item <sep> description : one item was missing <sep> order_id : ORD656239 <sep> products : detergent [EOS]",
+    "target_text": "I can help with complaint registration for order ORD656239.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0002",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Chennai",
+      "pincode": "110607",
+      "store_type": "pickup_point",
+      "order_id": ""
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Chennai <sep> order_id : [EMPTY] <sep> pincode : 110607 <sep> store_type : pickup_point [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0097",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Bengaluru",
+      "pincode": "380891",
+      "store_type": "express_store"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Bengaluru <sep> pincode : 380891 <sep> store_type : express_store [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0080",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "almonds",
+        "toor dal"
+      ],
+      "pincode": "400914",
+      "store_id": "STR7422"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 400914 <sep> products : almonds | toor dal <sep> store_id : STR7422 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0149",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD134678",
+      "expected_delivery_date": "2026-06-14",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Kolkata"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Kolkata <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-14 <sep> order_id : ORD134678 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD134678.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0227",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD365078",
+      "products": [
+        "onions",
+        "bread"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> order_id : ORD365078 <sep> products : onions | bread [EOS]",
+    "target_text": "I can help with exchange item for order ORD365078.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0085",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toothpaste"
+      ],
+      "pincode": "560115",
+      "store_id": "",
+      "ambiguous_reference": "the last order"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> ambiguous_reference : the last order <sep> pincode : 560115 <sep> products : toothpaste <sep> store_id : [EMPTY] [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0158",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD232329",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Delhi"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Delhi <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-10 <sep> order_id : ORD232329 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD232329.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0342",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD175390",
+      "expected_delivery_date": "2026-06-10"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> expected_delivery_date : 2026-06-10 <sep> order_id : ORD175390 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD175390.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0193",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD935381",
+      "products": [
+        "shampoo",
+        "green tea"
+      ],
+      "exchange_reason": "wrong size",
+      "preferred_variant": "size L"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong size <sep> order_id : ORD935381 <sep> preferred_variant : size L <sep> products : shampoo | green tea [EOS]",
+    "target_text": "I can help with exchange item for order ORD935381.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0264",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD474670",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Bengaluru"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Bengaluru <sep> delivery_slot : 8 AM - 10 AM <sep> expected_delivery_date : 2026-06-12 <sep> order_id : ORD474670 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD474670.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0235",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN64473",
+      "order_id": "ORD509938",
+      "payment_method": "debit_card"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD509938 <sep> payment_method : debit_card <sep> refund_id : RFN64473 [EOS]",
+    "target_text": "I can help with refund status for order ORD509938.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0160",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD555092",
+      "complaint_type": "late_delivery",
+      "products": [
+        "paneer",
+        "milk"
+      ],
+      "description": "one item was missing"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : one item was missing <sep> order_id : ORD555092 <sep> products : paneer | milk [EOS]",
+    "target_text": "I can help with complaint registration for order ORD555092.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0214",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD893420",
+      "phone_last4": "1510",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD893420 <sep> phone_last4 : 1510 [EOS]",
+    "target_text": "I can help with order status for order ORD893420.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0082",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN14469",
+      "order_id": "ORD915148",
+      "payment_method": "credit_card"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD915148 <sep> payment_method : credit_card <sep> refund_id : RFN14469 [EOS]",
+    "target_text": "I can help with refund status for order ORD915148.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0098",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD184357",
+      "complaint_type": "poor_quality",
+      "products": [
+        "toothpaste",
+        "apples"
+      ],
+      "description": "package was leaking"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : poor_quality <sep> description : package was leaking <sep> order_id : ORD184357 <sep> products : toothpaste | apples [EOS]",
+    "target_text": "I can help with complaint registration for order ORD184357.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0202",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FREESHIP",
+      "order_id": "ORD815348",
+      "cart_value": 2361
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 2361 <sep> coupon_code : FREESHIP <sep> order_id : ORD815348 [EOS]",
+    "target_text": "I can help with coupon issue for order ORD815348.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0147",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "shampoo",
+        "bread",
+        "eggs"
+      ],
+      "pincode": "411528",
+      "store_id": "STR7307"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 411528 <sep> products : shampoo | bread | eggs <sep> store_id : STR7307 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0311",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD964936",
+      "transaction_id": "TXN56127067",
+      "payment_method": "cash_on_delivery",
+      "issue_type": "payment_failed",
+      "products": [
+        "apples",
+        "atta",
+        "apples"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD964936 <sep> payment_method : cash_on_delivery <sep> products : apples | atta | apples <sep> transaction_id : TXN56127067 [EOS]",
+    "target_text": "I can help with payment issue for order ORD964936.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0070",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD790286",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "curd"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD790286 <sep> products : curd [EOS]",
+    "target_text": "I can help with cancel order for order ORD790286.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0069",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD923638",
+      "complaint_type": "late_delivery",
+      "products": [
+        "t-shirt",
+        "shampoo"
+      ],
+      "description": "product was stale"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : product was stale <sep> order_id : ORD923638 <sep> products : t-shirt | shampoo [EOS]",
+    "target_text": "I can help with complaint registration for order ORD923638.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0261",
+    "intent": "delivery_delay",
+    "slots": {
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "8 AM - 10 AM",
+      "city": "Ahmedabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Ahmedabad <sep> delivery_slot : 8 AM - 10 AM <sep> expected_delivery_date : 2026-06-10 <sep> missing_slots : order_id [EOS]",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0240",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD235592",
+      "phone_last4": "3954",
+      "channel": ""
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : [EMPTY] <sep> order_id : ORD235592 <sep> phone_last4 : 3954 [EOS]",
+    "target_text": "I can help with order status for order ORD235592.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0061",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD365414",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Bengaluru"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Bengaluru <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-07 <sep> order_id : ORD365414 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD365414.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0335",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD239568",
+      "phone_last4": "0749",
+      "channel": "store"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : store <sep> order_id : ORD239568 <sep> phone_last4 : 0749 [EOS]",
+    "target_text": "I can help with order status for order ORD239568.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0104",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD828696",
+      "transaction_id": "TXN32361249",
+      "payment_method": "wallet",
+      "issue_type": "duplicate_charge"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : duplicate_charge <sep> order_id : ORD828696 <sep> payment_method : wallet <sep> transaction_id : TXN32361249 [EOS]",
+    "target_text": "I can help with payment issue for order ORD828696.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0152",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD903318",
+      "phone_last4": "5349",
+      "channel": "website"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD903318 <sep> phone_last4 : 5349 [EOS]",
+    "target_text": "I can help with order status for order ORD903318.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0028",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD307432",
+      "invoice_type": "GST",
+      "email": "customer115@example.com"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> email : customer115@example.com <sep> invoice_type : GST <sep> order_id : ORD307432 [EOS]",
+    "target_text": "I can help with invoice request for order ORD307432.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0394",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD759811",
+      "products": [
+        "shampoo"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD759811 <sep> pickup_address : same as delivery address <sep> products : shampoo <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORD759811.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0301",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD571042",
+      "products": [
+        "eggs",
+        "toor dal"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD571042 <sep> pickup_address : same as delivery address <sep> products : eggs | toor dal <sep> return_reason : damaged item [EOS]",
+    "target_text": "I can help with return item for order ORD571042.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0180",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "INVALID_ID"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> order_id : INVALID_ID [EOS]",
+    "target_text": "I can help with order status for order INVALID_ID.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0373",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Pune",
+      "pincode": "110369",
+      "store_type": ""
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Pune <sep> pincode : 110369 <sep> store_type : [EMPTY] [EOS]",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0288",
+    "intent": "modify_order",
+    "slots": {
+      "order_id": null,
+      "products": [
+        "toothpaste"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : modify_order <sep> order_id : [NULL] <sep> products : toothpaste [EOS]",
+    "target_text": "I can help with modify order. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0368",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "detergent"
+      ],
+      "pincode": "560387",
+      "store_id": "STR6909",
+      "ambiguous_reference": "the last order"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> ambiguous_reference : the last order <sep> pincode : 560387 <sep> products : detergent <sep> store_id : STR6909 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0053",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD243468",
+      "products": [
+        "milk",
+        "cooking oil",
+        "toothpaste"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD243468 <sep> pickup_address : same as delivery address <sep> products : milk | cooking oil | toothpaste <sep> return_reason : expired product [EOS]",
+    "target_text": "I can help with return item for order ORD243468.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0162",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "6 PM - 8 PM",
+      "city": "Gurugram",
+      "products": [
+        "baby diapers",
+        "baby diapers"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Gurugram <sep> delivery_slot : 6 PM - 8 PM <sep> expected_delivery_date : 2026-06-10 <sep> order_id : ORD <sep> products : baby diapers | baby diapers [EOS]",
+    "target_text": "I can help with delivery delay for order ORD.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0174",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "milk",
+        "toor dal"
+      ],
+      "pincode": "500458",
+      "store_id": "STR2191"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 500458 <sep> products : milk | toor dal <sep> store_id : STR2191 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0020",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD387411",
+      "expected_delivery_date": "2026-06-12",
+      "delivery_slot": "6 PM - 8 PM",
+      "city": "Delhi"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Delhi <sep> delivery_slot : 6 PM - 8 PM <sep> expected_delivery_date : 2026-06-12 <sep> order_id : ORD387411 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD387411.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0303",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD394378",
+      "transaction_id": "TXN42359636",
+      "payment_method": "debit_card",
+      "issue_type": "charged_but_order_not_placed",
+      "products": [
+        "pressure cooker",
+        "detergent"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD394378 <sep> payment_method : debit_card <sep> products : pressure cooker | detergent <sep> transaction_id : TXN42359636 [EOS]",
+    "target_text": "I can help with payment issue for order ORD394378.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products"
+    ]
+  },
+  {
+    "sample_id": "SMP0042",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORDER-??",
+      "expected_delivery_date": "2026-06-06"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORDER-?? [EOS]",
+    "target_text": "I can help with delivery delay for order ORDER-??.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id",
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0179",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD711329",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Ahmedabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Ahmedabad <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORD711329 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD711329.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0172",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN19443",
+      "payment_method": "wallet",
+      "products": [
+        "t-shirt",
+        "onions",
+        "t-shirt"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> payment_method : wallet <sep> products : t-shirt | onions | t-shirt <sep> refund_id : RFN19443 <sep> missing_slots : order_id [EOS]",
+    "target_text": "I can help with refund status. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "missing_required_slot",
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0253",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD264311",
+      "products": [
+        "almonds",
+        "potatoes"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "1 kg pack"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD264311 <sep> preferred_variant : 1 kg pack <sep> products : almonds | potatoes [EOS]",
+    "target_text": "I can help with exchange item for order ORD264311.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0238",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD576244",
+      "complaint_type": "late_delivery",
+      "products": [
+        "cooking oil",
+        "detergent"
+      ],
+      "description": "package was leaking"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : package was leaking <sep> order_id : ORD576244 <sep> products : cooking oil | detergent [EOS]",
+    "target_text": "I can help with complaint registration for order ORD576244.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0111",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD845211",
+      "phone_last4": "0839",
+      "channel": "call_center"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : call_center <sep> order_id : ORD845211 <sep> phone_last4 : 0839 [EOS]",
+    "target_text": "I can help with order status for order ORD845211.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0084",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD444181",
+      "phone_last4": "5880",
+      "channel": "call_center",
+      "products": [
+        "cooking oil",
+        "baby diapers",
+        "atta"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : call_center <sep> order_id : ORD444181 <sep> phone_last4 : 5880 <sep> products : cooking oil | baby diapers | atta [EOS]",
+    "target_text": "I can help with order status for order ORD444181.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products"
+    ]
+  },
+  {
+    "sample_id": "SMP0025",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD764613",
+      "phone_last4": "0013",
+      "channel": "website"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD764613 <sep> phone_last4 : 0013 [EOS]",
+    "target_text": "I can help with order status for order ORD764613.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0006",
+    "intent": "product_availability",
+    "slots": {
+      "pincode": "700966",
+      "store_id": "STR2304"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 700966 <sep> store_id : STR2304 <sep> missing_slots : products [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0101",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD934146",
+      "expected_delivery_date": "2026-06-06"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORD934146 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD934146.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0277",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD188322",
+      "phone_last4": "3814",
+      "channel": "app"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD188322 <sep> phone_last4 : 3814 [EOS]",
+    "target_text": "I can help with order status for order ORD188322.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0183",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD554093",
+      "invoice_type": "standard",
+      "email": "customer859@example.com"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> email : customer859@example.com <sep> invoice_type : standard <sep> order_id : ORD554093 [EOS]",
+    "target_text": "I can help with invoice request for order ORD554093.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0331",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD435039",
+      "complaint_type": "missing_item",
+      "products": [
+        "eggs",
+        "bananas"
+      ],
+      "description": "one item was missing"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : missing_item <sep> description : one item was missing <sep> order_id : ORD435039 <sep> products : eggs | bananas [EOS]",
+    "target_text": "I can help with complaint registration for order ORD435039.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0003",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "curd",
+        "cooking oil",
+        "detergent"
+      ],
+      "pincode": "380972",
+      "store_id": "STR3532"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 380972 <sep> products : curd | cooking oil | detergent <sep> store_id : STR3532 [EOS]",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0181",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD544599"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> order_id : ORD544599 [EOS]",
+    "target_text": "I can help with cancel order for order ORD544599.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ]
+  },
+  {
+    "sample_id": "SMP0106",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD200081",
+      "new_address": "Tower B, Prestige Park",
+      "city": "Pune",
+      "pincode": "600274"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Pune <sep> new_address : Tower B, Prestige Park <sep> order_id : ORD200081 <sep> pincode : 600274 [EOS]",
+    "target_text": "I can help with delivery address update for order ORD200081.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0284",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD986736",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "tomatoes"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD986736 <sep> products : tomatoes [EOS]",
+    "target_text": "I can help with cancel order for order ORD986736.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0226",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD363677",
+      "expected_delivery_date": "2026-06-08",
+      "delivery_slot": "8 PM - 10 PM",
+      "city": "Hyderabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Hyderabad <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-08 <sep> order_id : ORD363677 [EOS]",
+    "target_text": "I can help with delivery delay for order ORD363677.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0166",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD881288",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Bengaluru",
+      "pincode": "380513"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Bengaluru <sep> new_address : Flat 402, Lake View Apt <sep> order_id : ORD881288 <sep> pincode : 380513 [EOS]",
+    "target_text": "I can help with delivery address update for order ORD881288.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0100",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD364370",
+      "complaint_type": "wrong_item",
+      "products": [
+        "eggs"
+      ],
+      "description": "one item was missing"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : wrong_item <sep> description : one item was missing <sep> order_id : ORD364370 <sep> products : eggs [EOS]",
+    "target_text": "I can help with complaint registration for order ORD364370.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0297",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD865760",
+      "products": [
+        "cooking oil"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "red color"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : defective item <sep> order_id : ORD865760 <sep> preferred_variant : red color <sep> products : cooking oil [EOS]",
+    "target_text": "I can help with exchange item for order ORD865760.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0063",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD265100",
+      "transaction_id": "TXN44668987",
+      "payment_method": "UPI",
+      "issue_type": "payment_failed"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : payment_failed <sep> order_id : ORD265100 <sep> payment_method : UPI <sep> transaction_id : TXN44668987 [EOS]",
+    "target_text": "I can help with payment issue for order ORD265100.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0121",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD940669",
+      "phone_last4": "3791",
+      "channel": "store"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : store <sep> order_id : ORD940669 <sep> phone_last4 : 3791 [EOS]",
+    "target_text": "I can help with order status for order ORD940669.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0278",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD539776",
+      "products": [
+        "green tea",
+        "pressure cooker"
+      ],
+      "exchange_reason": "wrong size",
+      "preferred_variant": "size L"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong size <sep> order_id : ORD539776 <sep> preferred_variant : size L <sep> products : green tea | pressure cooker [EOS]",
+    "target_text": "I can help with exchange item for order ORD539776.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0001",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD953809",
+      "new_address": "Office reception desk",
+      "city": null,
+      "pincode": "400633"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : [NULL] <sep> new_address : Office reception desk <sep> order_id : ORD953809 <sep> pincode : 400633 [EOS]",
+    "target_text": "I can help with delivery address update for order ORD953809.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ]
+  },
+  {
+    "sample_id": "SMP0032",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD899808",
+      "invoice_type": "duplicate_copy",
+      "email": "customer573@example.com",
+      "ambiguous_reference": "same item"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> ambiguous_reference : same item <sep> email : customer573@example.com <sep> invoice_type : duplicate_copy <sep> order_id : ORD899808 [EOS]",
+    "target_text": "I can help with invoice request for order ORD899808.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request"
+    ]
+  },
+  {
+    "sample_id": "SMP0290",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD690320"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> order_id : ORD690320 <sep> missing_slots : complaint_type [EOS]",
+    "target_text": "I can help with complaint registration for order ORD690320.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "missing_required_slot"
+    ]
+  },
+  {
+    "sample_id": "SMP0155",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "12345",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "baby diapers",
+        "baby diapers"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : 12345 <sep> products : baby diapers | baby diapers [EOS]",
+    "target_text": "I can help with cancel order for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0219",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD870005",
+      "complaint_type": "poor_quality",
+      "products": [
+        "baby diapers"
+      ],
+      "description": "product was stale"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : poor_quality <sep> description : product was stale <sep> order_id : ORD870005 <sep> products : baby diapers [EOS]",
+    "target_text": "I can help with complaint registration for order ORD870005.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0269",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD977242",
+      "new_address": "Flat 402, Lake View Apt",
+      "city": "Kolkata",
+      "pincode": "122673"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Kolkata <sep> new_address : Flat 402, Lake View Apt <sep> order_id : ORD977242 <sep> pincode : 122673 [EOS]",
+    "target_text": "I can help with delivery address update for order ORD977242.",
+    "edge_case": false,
+    "edge_case_types": []
+  },
+  {
+    "sample_id": "SMP0395",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "12345",
+      "invoice_type": "GST",
+      "email": "customer180@example.com",
+      "ambiguous_reference": "same item"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> ambiguous_reference : same item <sep> email : customer180@example.com <sep> invoice_type : GST <sep> order_id : 12345 [EOS]",
+    "target_text": "I can help with invoice request for order 12345.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "invalid_id"
+    ]
+  },
+  {
+    "sample_id": "SMP0305",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD266552",
+      "complaint_type": "late_delivery",
+      "products": [
+        "shampoo",
+        "green tea",
+        "shampoo"
+      ]
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> order_id : ORD266552 <sep> products : shampoo | green tea | shampoo [EOS]",
+    "target_text": "I can help with complaint registration for order ORD266552.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "duplicate_entities"
+    ]
+  },
+  {
+    "sample_id": "SMP0119",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": null,
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Hyderabad"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Hyderabad <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-10 <sep> order_id : [NULL] [EOS]",
+    "target_text": "I can help with delivery delay. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+# .gitignore for AssignmentSolution repository
+# Ignore common Python, environment, editor, and build artifacts
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# pip / wheel
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Project-specific: if you want to keep the `data/` folder tracked,
+# remove or comment out the following line. By default we do not ignore it.
+# To explicitly allow data, add: !data/
