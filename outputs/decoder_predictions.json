@@ -1,0 +1,302 @@
+[
+    {
+        "input": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD841324 <sep> phone_last4 : 9488 [EOS]",
+        "expected": "I can help with order status for order ORD841324.",
+        "generated": "I can help with order status for order ORD387515. details for verification. order"
+    },
+    {
+        "input": "[BOS] intent : product_availability <sep> pincode : 110536 <sep> products : milk <sep> store_id : STR4656 [EOS]",
+        "expected": "I can help with product availability. Please share the missing details for verification.",
+        "generated": "I can help with product availability. Please share the missing details for verification."
+    },
+    {
+        "input": "[BOS] intent : modify_order <sep> delivery_slot : 8 PM - 10 PM <sep> order_id : ORD191208 <sep> products : shampoo | green tea <sep> quantity_change : increase to 2 packs [EOS]",
+        "expected": "I can help with modify order for order ORD191208.",
+        "generated": "I can help with modify order for order ORD569033. for verification. payment order"
+    },
+    {
+        "input": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD556870 <sep> payment_method : wallet <sep> transaction_id : TXN24984645 [EOS]",
+        "expected": "I can help with payment issue for order ORD556870.",
+        "generated": "I can help with payment issue for order ORD105340. for verification. order"
+    },
+    {
+        "input": "[BOS] intent : refund_status <sep> order_id : ORD212166 <sep> payment_method : net_banking <sep> refund_id : RFN72921 [EOS]",
+        "expected": "I can help with refund status for order ORD212166.",
+        "generated": "I can help with refund status order order ORD509938. for verification."
+    },
+    {
+        "input": "[BOS] intent : delivery_address_update <sep> city : Mumbai <sep> new_address : Tower B, Prestige Park <sep> order_id : ORD857150 <sep> pincode : 400452 <sep> products : potatoes | potatoes [EOS]",
+        "expected": "I can help with delivery address update for order ORD857150.",
+        "generated": "I can help with delivery address update for order ORD604782. verification. for [UNK] can for can [UNK] can [UNK]"
+    },
+    {
+        "input": "[BOS] intent : modify_order <sep> delivery_slot : 8 AM - 10 AM <sep> order_id : ORDER-?? <sep> products : toor dal | tomatoes | almonds | bread <sep> quantity_change : increase to 2 packs [EOS]",
+        "expected": "I can help with modify order for order ORDER-??.",
+        "generated": "I can help with modify order for order ORD669311. for for verification. for verification. order"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> channel : call_center <sep> order_id : ORD367098 <sep> phone_last4 : 1791 [EOS]",
+        "expected": "I can help with order status for order ORD367098.",
+        "generated": "I can help with order status for order ORD845211. for for verification."
+    },
+    {
+        "input": "[BOS] intent : complaint_registration <sep> complaint_type : wrong_item <sep> description : product was stale <sep> order_id : ORD703647 <sep> products : toor dal | green tea [EOS]",
+        "expected": "I can help with complaint registration for order ORD703647.",
+        "generated": "I can help with complaint registration for order ORD934533. details verification. for registration for for order"
+    },
+    {
+        "input": "[BOS] intent : return_item <sep> order_id : ORD742030 <sep> pickup_address : same as delivery address <sep> products : detergent <sep> return_reason : damaged item [EOS]",
+        "expected": "I can help with return item for order ORD742030.",
+        "generated": "I can help with return item for order ORD999694. details for verification."
+    },
+    {
+        "input": "[BOS] intent : cancel_order <sep> order_id : ORD296506 [EOS]",
+        "expected": "I can help with cancel order for order ORD296506.",
+        "generated": "I can help with cancel order for order"
+    },
+    {
+        "input": "[BOS] intent : subscription_issue <sep> issue_type : renewal_failed <sep> phone_last4 : 6197 <sep> subscription_id : SUB85494 [EOS]",
+        "expected": "I can help with subscription issue. Please share the missing details for verification.",
+        "generated": "I can help with subscription issue. Please share the missing details for verification. share"
+    },
+    {
+        "input": "[BOS] intent : payment_issue <sep> order_id : ORD247826 <sep> payment_method : cash_on_delivery <sep> products : atta | eggs | toothpaste <sep> transaction_id : TXN19119371 <sep> missing_slots : issue_type [EOS]",
+        "expected": "I can help with payment issue for order ORD247826.",
+        "generated": "I can help with modify issue for order ORD485725. for for verification. verification. payment ORD690320. payment order"
+    },
+    {
+        "input": "[BOS] intent : product_availability <sep> pincode : 411719 <sep> products : tomatoes | atta <sep> store_id : STR3575 [EOS]",
+        "expected": "I can help with product availability. Please share the missing details for verification.",
+        "generated": "I can help with product availability. Please share the missing details for verification. the"
+    },
+    {
+        "input": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD332799 <sep> products : toor dal | pressure cooker [EOS]",
+        "expected": "I can help with cancel order for order ORD332799.",
+        "generated": "I can help with cancel order for order details verification. verification. for for order"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> channel : [EMPTY] <sep> order_id : ORD666620 <sep> phone_last4 : 9263 [EOS]",
+        "expected": "I can help with order status for order ORD666620.",
+        "generated": "I can help with order status for order ORD278392. for for verification."
+    },
+    {
+        "input": "[BOS] intent : return_item <sep> order_id : ORD225972 <sep> pickup_address : same as delivery address <sep> products : potatoes <sep> return_reason : damaged item [EOS]",
+        "expected": "I can help with return item for order ORD225972.",
+        "generated": "I can help with return item for order ORD374160. details for verification."
+    },
+    {
+        "input": "[BOS] intent : coupon_issue <sep> cart_value : 2897 <sep> coupon_code : WEEKEND200 <sep> order_id : [EMPTY] [EOS]",
+        "expected": "I can help with coupon issue. Please share the missing details for verification.",
+        "generated": "I can help with coupon issue for order ORD654440. for verification."
+    },
+    {
+        "input": "[BOS] intent : refund_status <sep> order_id : ORD717719 <sep> payment_method : UPI <sep> refund_id : RFN24075 [EOS]",
+        "expected": "I can help with refund status for order ORD717719.",
+        "generated": "I can help with refund status for order ORD272787. for verification."
+    },
+    {
+        "input": "[BOS] intent : return_item <sep> order_id : ORD501834 <sep> pickup_address : same as delivery address <sep> products : bananas <sep> return_reason : damaged item [EOS]",
+        "expected": "I can help with return item for order ORD501834.",
+        "generated": "I can help with return item for order ORD999694. details for verification."
+    },
+    {
+        "input": "[BOS] intent : refund_status <sep> ambiguous_reference : the second one <sep> payment_method : UPI <sep> refund_id : RFN50558 <sep> missing_slots : order_id [EOS]",
+        "expected": "I can help with refund status. Please share the missing details for verification.",
+        "generated": "I can help with product status for order ORD240094. missing for ORD690320. the"
+    },
+    {
+        "input": "[BOS] intent : refund_status <sep> refund_id : RFN16905 <sep> missing_slots : order_id [EOS]",
+        "expected": "I can help with refund status. Please share the missing details for verification.",
+        "generated": "I can help with help status. share share ORD690320. for"
+    },
+    {
+        "input": "[BOS] intent : refund_status <sep> order_id : ORD988187 <sep> payment_method : credit_card <sep> refund_id : RFN55827 [EOS]",
+        "expected": "I can help with refund status for order ORD988187.",
+        "generated": "I can help with refund status for order ORD656898. details for verification."
+    },
+    {
+        "input": "[BOS] intent : return_item <sep> order_id : ORD600266 <sep> products : paneer | eggs | potatoes [EOS]",
+        "expected": "I can help with return item for order ORD600266.",
+        "generated": "I can help with return item for order ORD337693. details for verification."
+    },
+    {
+        "input": "[BOS] intent : invoice_request <sep> email : customer399@example.com <sep> invoice_type : duplicate_copy <sep> order_id : 12345 [EOS]",
+        "expected": "I can help with invoice request for order 12345.",
+        "generated": "I can help with invoice request order order ORD196403. for for verification."
+    },
+    {
+        "input": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD535846 <sep> products : tomatoes | paneer [EOS]",
+        "expected": "I can help with cancel order for order ORD535846.",
+        "generated": "I can help with cancel order for order ORD335286. verification."
+    },
+    {
+        "input": "[BOS] intent : delivery_delay <sep> city : Kolkata <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORD210614 [EOS]",
+        "expected": "I can help with delivery delay for order ORD210614.",
+        "generated": "I can help with delivery delay for order ORD292881. for verification. delivery help order"
+    },
+    {
+        "input": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD215683 <sep> products : toor dal [EOS]",
+        "expected": "I can help with cancel order for order ORD215683.",
+        "generated": "I can help with cancel order for order for verification. order"
+    },
+    {
+        "input": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : one item was missing <sep> order_id : ORD369506 <sep> products : toor dal | shampoo [EOS]",
+        "expected": "I can help with complaint registration for order ORD369506.",
+        "generated": "I can help with complaint registration for order ORD628830. ORD545171. verification. verification. payment for for can order"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD855429 <sep> phone_last4 : 7884 [EOS]",
+        "expected": "I can help with order status for order ORD855429.",
+        "generated": "I can help with order status for order ORD387515. details for for order"
+    },
+    {
+        "input": "[BOS] intent : exchange_item <sep> exchange_reason : [NULL] <sep> order_id : ORD512032 <sep> preferred_variant : 1 kg pack <sep> products : cooking oil | bread [EOS]",
+        "expected": "I can help with exchange item for order ORD512032.",
+        "generated": "I can help with exchange item Please share ORD444181. missing details for verification. ORD365078. the share"
+    },
+    {
+        "input": "[BOS] intent : modify_order <sep> delivery_slot : 6 AM - 8 AM <sep> order_id : ORD621451 <sep> products : detergent <sep> quantity_change : remove 1 unit [EOS]",
+        "expected": "I can help with modify order for order ORD621451.",
+        "generated": "I can help with modify order for order ORD701778. details for verification. order verification. order"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> channel : store <sep> order_id : ORD525731 <sep> phone_last4 : 9357 [EOS]",
+        "expected": "I can help with order status for order ORD525731.",
+        "generated": "I can help with order status for order ORD424834. details for for"
+    },
+    {
+        "input": "[BOS] intent : invoice_request <sep> email : customer705@example.com <sep> invoice_type : duplicate_copy <sep> order_id : ORD335576 [EOS]",
+        "expected": "I can help with invoice request for order ORD335576.",
+        "generated": "I can help with invoice request for order ORD196403. for for verification."
+    },
+    {
+        "input": "[BOS] intent : product_availability <sep> pincode : 560196 <sep> products : bananas | t-shirt <sep> store_id : STR1514 [EOS]",
+        "expected": "I can help with product availability. Please share the missing details for verification.",
+        "generated": "I can help with product availability. Please share the missing details for verification. the"
+    },
+    {
+        "input": "[BOS] intent : store_locator <sep> city : Mumbai <sep> pincode : 560958 <sep> store_type : supermarket [EOS]",
+        "expected": "I can help with store locator. Please share the missing details for verification.",
+        "generated": "I can help with store locator. Please share the missing details for verification. share"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD276606 <sep> phone_last4 : 8352 [EOS]",
+        "expected": "I can help with order status for order ORD276606.",
+        "generated": "I can help with order status for order ORD954165. details for for"
+    },
+    {
+        "input": "[BOS] intent : return_item <sep> order_id : ORD552338 <sep> pickup_address : same as delivery address <sep> products : onions | apples | almonds <sep> return_reason : wrong item delivered [EOS]",
+        "expected": "I can help with return item for order ORD552338.",
+        "generated": "I can help with return item for order ORD999694. details verification. verification. for order"
+    },
+    {
+        "input": "[BOS] intent : complaint_registration <sep> complaint_type : missing_item <sep> description : package was leaking <sep> order_id : ORD859895 <sep> products : t-shirt | shampoo [EOS]",
+        "expected": "I can help with complaint registration for order ORD859895.",
+        "generated": "I can help with complaint registration for order ORD419582. details verification. verification. registration verification. can order"
+    },
+    {
+        "input": "[BOS] intent : product_availability <sep> pincode : 500251 <sep> products : green tea | eggs <sep> store_id : STR3615 [EOS]",
+        "expected": "I can help with product availability. Please share the missing details for verification.",
+        "generated": "I can help with product availability. Please share the missing details for verification. share"
+    },
+    {
+        "input": "[BOS] intent : modify_order <sep> delivery_slot : 6 PM - 8 PM <sep> order_id : ORD410356 <sep> products : [NULL] <sep> quantity_change : add 1 unit [EOS]",
+        "expected": "I can help with modify order for order ORD410356.",
+        "generated": "I can help with modify order. for share the details for verification. ORD649156. Please verification. share"
+    },
+    {
+        "input": "[BOS] intent : product_availability <sep> pincode : 110954 <sep> products : green tea | bread <sep> store_id : STR2226 [EOS]",
+        "expected": "I can help with product availability. Please share the missing details for verification.",
+        "generated": "I can help with product availability. Please share the missing details for verification. missing share"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> channel : call_center <sep> order_id : ORD293553 <sep> phone_last4 : 4087 [EOS]",
+        "expected": "I can help with order status for order ORD293553.",
+        "generated": "I can help with order status for order ORD845211. details for for order"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> ambiguous_reference : yesterday delivery <sep> channel : app <sep> order_id : ORD493036 <sep> phone_last4 : [EMPTY] [EOS]",
+        "expected": "I can help with order status for order ORD493036.",
+        "generated": "I can help with order status for order the order"
+    },
+    {
+        "input": "[BOS] intent : refund_status <sep> order_id : ORD996744 <sep> payment_method : cash_on_delivery <sep> refund_id : RFN59944 [EOS]",
+        "expected": "I can help with refund status for order ORD996744.",
+        "generated": "I can help with refund status for order ORD833630. for verification."
+    },
+    {
+        "input": "[BOS] intent : coupon_issue <sep> cart_value : 3657 <sep> coupon_code : FRESH20 <sep> order_id : ORD971255 [EOS]",
+        "expected": "I can help with coupon issue for order ORD971255.",
+        "generated": "I can help with coupon issue for order ORD833244. for for verification."
+    },
+    {
+        "input": "[BOS] intent : return_item <sep> order_id : ORD614909 <sep> products : [NULL] [EOS]",
+        "expected": "I can help with return item for order ORD614909.",
+        "generated": "I can help with modify item for share the details for"
+    },
+    {
+        "input": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD343074 <sep> phone_last4 : 4911 [EOS]",
+        "expected": "I can help with order status for order ORD343074.",
+        "generated": "I can help with order status for order ORD735800. details for for verification."
+    },
+    {
+        "input": "[BOS] intent : delivery_delay <sep> city : Delhi <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-07 <sep> order_id : ORD749745 [EOS]",
+        "expected": "I can help with delivery delay for order ORD749745.",
+        "generated": "I can help with delivery delay for order ORD154193. details for verification. delivery can order"
+    },
+    {
+        "input": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : [EMPTY] <sep> products : potatoes | potatoes [EOS]",
+        "expected": "I can help with cancel order. Please share the missing details for verification.",
+        "generated": "I can help with cancel order for order ORD335286. for for"
+    },
+    {
+        "input": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> description : [NULL] <sep> order_id : ORDER-?? <sep> products : pressure cooker | t-shirt [EOS]",
+        "expected": "I can help with complaint registration for order ORDER-??.",
+        "generated": "I can help with complaint registration for order ORD628830. details verification. verification. can order"
+    },
+    {
+        "input": "[BOS] intent : complaint_registration <sep> complaint_type : missing_item <sep> description : one item was missing <sep> order_id : ORD220359 <sep> products : apples | basmati rice [EOS]",
+        "expected": "I can help with complaint registration for order ORD220359.",
+        "generated": "I can help with complaint registration for order ORD826408. ORD545171. verification. registration for order"
+    },
+    {
+        "input": "[BOS] intent : product_availability <sep> pincode : 400653 <sep> products : milk | bananas <sep> store_id : STR9368 [EOS]",
+        "expected": "I can help with product availability. Please share the missing details for verification.",
+        "generated": "I can help with product availability. Please share the missing details for verification. the"
+    },
+    {
+        "input": "[BOS] intent : refund_status <sep> order_id : ORD292606 <sep> payment_method : UPI <sep> refund_id : RFN60679 [EOS]",
+        "expected": "I can help with refund status for order ORD292606.",
+        "generated": "I can help with refund status for order ORD272787. for verification."
+    },
+    {
+        "input": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : [NULL] <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORD164850 [EOS]",
+        "expected": "I can help with delivery delay for order ORD164850.",
+        "generated": "I can help with delivery delay. Please share ORD625943. details for verification. for"
+    },
+    {
+        "input": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD671569 <sep> products : baby diapers [EOS]",
+        "expected": "I can help with cancel order for order ORD671569.",
+        "generated": "I can help with cancel order for order ORD881180. order for"
+    },
+    {
+        "input": "[BOS] intent : delivery_delay <sep> city : Hyderabad <sep> delivery_slot : 8 PM - 10 PM <sep> expected_delivery_date : 2026-06-09 <sep> order_id : ORD821179 [EOS]",
+        "expected": "I can help with delivery delay for order ORD821179.",
+        "generated": "I can help with delivery delay for order ORD470226. for verification. delivery order"
+    },
+    {
+        "input": "[BOS] intent : complaint_registration <sep> complaint_type : missing_item <sep> description : package was leaking <sep> order_id : ORD140607 <sep> products : detergent [EOS]",
+        "expected": "I can help with complaint registration for order ORD140607.",
+        "generated": "I can help with complaint registration for order ORD219097. details verification. verification. registration order"
+    },
+    {
+        "input": "[BOS] intent : store_locator <sep> ambiguous_reference : the last order <sep> city : Hyderabad <sep> pincode : 500453 <sep> products : shampoo | shampoo <sep> store_type : supermarket [EOS]",
+        "expected": "I can help with store locator. Please share the missing details for verification.",
+        "generated": "I can help with product locator. Please share the missing for verification. ORD365078. can missing verification. missing the"
+    },
+    {
+        "input": "[BOS] intent : delivery_delay <sep> city : Bengaluru <sep> delivery_slot : 6 PM - 8 PM <sep> expected_delivery_date : 2026-06-11 <sep> order_id : ORD958517 [EOS]",
+        "expected": "I can help with delivery delay for order ORD958517.",
+        "generated": "I can help with delivery delay for order ORD136903. details for verification. delivery order"
+    }
+]
