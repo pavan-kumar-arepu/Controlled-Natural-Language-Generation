@@ -1,0 +1,580 @@
+{
+  "schema_version": "1.0",
+  "domain": "retail_delivery_customer_service",
+  "seed": 20260605,
+  "intents": [
+    {
+      "name": "order_status",
+      "weight": 0.155,
+      "description": "Customer asks for current order state.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD382910"
+          ]
+        },
+        {
+          "name": "phone_last4",
+          "dtype": "string",
+          "required": false,
+          "description": "Last four account phone digits.",
+          "examples": [
+            "4421"
+          ]
+        },
+        {
+          "name": "channel",
+          "dtype": "string",
+          "required": false,
+          "description": "Purchase channel.",
+          "examples": [
+            "app"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "delivery_delay",
+      "weight": 0.12,
+      "description": "Customer reports delayed delivery.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD700423"
+          ]
+        },
+        {
+          "name": "expected_delivery_date",
+          "dtype": "date",
+          "required": false,
+          "description": "Promised delivery date.",
+          "examples": [
+            "2026-06-07"
+          ]
+        },
+        {
+          "name": "delivery_slot",
+          "dtype": "string",
+          "required": false,
+          "description": "Selected time slot.",
+          "examples": [
+            "8 AM - 10 AM"
+          ]
+        },
+        {
+          "name": "city",
+          "dtype": "string",
+          "required": false,
+          "description": "Delivery city.",
+          "examples": [
+            "Bengaluru"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cancel_order",
+      "weight": 0.1,
+      "description": "Customer wants to cancel order or items.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD811204"
+          ]
+        },
+        {
+          "name": "cancellation_reason",
+          "dtype": "string",
+          "required": false,
+          "description": "Cancellation reason.",
+          "examples": [
+            "ordered by mistake"
+          ]
+        },
+        {
+          "name": "products",
+          "dtype": "list[string]",
+          "required": false,
+          "description": "Products to cancel.",
+          "examples": [
+            "milk"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refund_status",
+      "weight": 0.09,
+      "description": "Customer asks about refund progress.",
+      "slots": [
+        {
+          "name": "refund_id",
+          "dtype": "string",
+          "required": false,
+          "description": "Refund identifier.",
+          "examples": [
+            "RFN48201"
+          ]
+        },
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD554812"
+          ]
+        },
+        {
+          "name": "payment_method",
+          "dtype": "string",
+          "required": false,
+          "description": "Original payment method.",
+          "examples": [
+            "UPI"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "return_item",
+      "weight": 0.08,
+      "description": "Customer wants to return items.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD602918"
+          ]
+        },
+        {
+          "name": "products",
+          "dtype": "list[string]",
+          "required": true,
+          "description": "Products to return.",
+          "examples": [
+            "detergent"
+          ]
+        },
+        {
+          "name": "return_reason",
+          "dtype": "string",
+          "required": false,
+          "description": "Reason for return.",
+          "examples": [
+            "damaged item"
+          ]
+        },
+        {
+          "name": "pickup_address",
+          "dtype": "string",
+          "required": false,
+          "description": "Return pickup address.",
+          "examples": [
+            "same as delivery address"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "payment_issue",
+      "weight": 0.075,
+      "description": "Customer reports payment issue.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": false,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD309855"
+          ]
+        },
+        {
+          "name": "transaction_id",
+          "dtype": "string",
+          "required": false,
+          "description": "Payment transaction identifier.",
+          "examples": [
+            "TXN88291120"
+          ]
+        },
+        {
+          "name": "payment_method",
+          "dtype": "string",
+          "required": true,
+          "description": "Payment method used.",
+          "examples": [
+            "UPI"
+          ]
+        },
+        {
+          "name": "issue_type",
+          "dtype": "string",
+          "required": true,
+          "description": "Type of payment issue.",
+          "examples": [
+            "duplicate_charge"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "modify_order",
+      "weight": 0.07,
+      "description": "Customer wants to change order before dispatch.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD915771"
+          ]
+        },
+        {
+          "name": "products",
+          "dtype": "list[string]",
+          "required": false,
+          "description": "Items to change.",
+          "examples": [
+            "bread"
+          ]
+        },
+        {
+          "name": "quantity_change",
+          "dtype": "string",
+          "required": false,
+          "description": "Requested quantity change.",
+          "examples": [
+            "add 1 unit"
+          ]
+        },
+        {
+          "name": "delivery_slot",
+          "dtype": "string",
+          "required": false,
+          "description": "Requested delivery slot.",
+          "examples": [
+            "6 PM - 8 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "product_availability",
+      "weight": 0.07,
+      "description": "Customer checks product availability.",
+      "slots": [
+        {
+          "name": "products",
+          "dtype": "list[string]",
+          "required": true,
+          "description": "Products being searched.",
+          "examples": [
+            "tomatoes"
+          ]
+        },
+        {
+          "name": "pincode",
+          "dtype": "string",
+          "required": false,
+          "description": "Delivery pincode.",
+          "examples": [
+            "560001"
+          ]
+        },
+        {
+          "name": "store_id",
+          "dtype": "string",
+          "required": false,
+          "description": "Store identifier.",
+          "examples": [
+            "STR1024"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "complaint_registration",
+      "weight": 0.06,
+      "description": "Customer registers complaint.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": false,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD150920"
+          ]
+        },
+        {
+          "name": "complaint_type",
+          "dtype": "string",
+          "required": true,
+          "description": "Complaint category.",
+          "examples": [
+            "missing_item"
+          ]
+        },
+        {
+          "name": "products",
+          "dtype": "list[string]",
+          "required": false,
+          "description": "Products involved.",
+          "examples": [
+            "paneer"
+          ]
+        },
+        {
+          "name": "description",
+          "dtype": "string",
+          "required": false,
+          "description": "Issue description.",
+          "examples": [
+            "one item was missing"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exchange_item",
+      "weight": 0.05,
+      "description": "Customer requests exchange.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD445901"
+          ]
+        },
+        {
+          "name": "products",
+          "dtype": "list[string]",
+          "required": true,
+          "description": "Products for exchange.",
+          "examples": [
+            "shirt"
+          ]
+        },
+        {
+          "name": "exchange_reason",
+          "dtype": "string",
+          "required": false,
+          "description": "Exchange reason.",
+          "examples": [
+            "wrong size"
+          ]
+        },
+        {
+          "name": "preferred_variant",
+          "dtype": "string",
+          "required": false,
+          "description": "Replacement variant.",
+          "examples": [
+            "size L"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "store_locator",
+      "weight": 0.04,
+      "description": "Customer asks for nearest store.",
+      "slots": [
+        {
+          "name": "city",
+          "dtype": "string",
+          "required": false,
+          "description": "Customer city.",
+          "examples": [
+            "Pune"
+          ]
+        },
+        {
+          "name": "pincode",
+          "dtype": "string",
+          "required": false,
+          "description": "Lookup pincode.",
+          "examples": [
+            "411014"
+          ]
+        },
+        {
+          "name": "store_type",
+          "dtype": "string",
+          "required": false,
+          "description": "Type of store.",
+          "examples": [
+            "pickup_point"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "delivery_address_update",
+      "weight": 0.03,
+      "description": "Customer updates delivery address.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD228145"
+          ]
+        },
+        {
+          "name": "new_address",
+          "dtype": "string",
+          "required": true,
+          "description": "Updated delivery address.",
+          "examples": [
+            "Flat 402"
+          ]
+        },
+        {
+          "name": "city",
+          "dtype": "string",
+          "required": false,
+          "description": "Delivery city.",
+          "examples": [
+            "Chennai"
+          ]
+        },
+        {
+          "name": "pincode",
+          "dtype": "string",
+          "required": false,
+          "description": "Delivery pincode.",
+          "examples": [
+            "600042"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "coupon_issue",
+      "weight": 0.025,
+      "description": "Customer reports coupon issue.",
+      "slots": [
+        {
+          "name": "coupon_code",
+          "dtype": "string",
+          "required": true,
+          "description": "Coupon code.",
+          "examples": [
+            "SAVE100"
+          ]
+        },
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": false,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD456100"
+          ]
+        },
+        {
+          "name": "cart_value",
+          "dtype": "number",
+          "required": false,
+          "description": "Cart value.",
+          "examples": [
+            "1499"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "subscription_issue",
+      "weight": 0.02,
+      "description": "Customer asks about subscription benefits.",
+      "slots": [
+        {
+          "name": "subscription_id",
+          "dtype": "string",
+          "required": false,
+          "description": "Subscription identifier.",
+          "examples": [
+            "SUB88201"
+          ]
+        },
+        {
+          "name": "issue_type",
+          "dtype": "string",
+          "required": true,
+          "description": "Subscription issue type.",
+          "examples": [
+            "benefit_not_applied"
+          ]
+        },
+        {
+          "name": "phone_last4",
+          "dtype": "string",
+          "required": false,
+          "description": "Last four phone digits.",
+          "examples": [
+            "1212"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "invoice_request",
+      "weight": 0.015,
+      "description": "Customer asks for invoice.",
+      "slots": [
+        {
+          "name": "order_id",
+          "dtype": "string",
+          "required": true,
+          "description": "Retail order identifier.",
+          "examples": [
+            "ORD901882"
+          ]
+        },
+        {
+          "name": "invoice_type",
+          "dtype": "string",
+          "required": false,
+          "description": "Invoice type.",
+          "examples": [
+            "GST"
+          ]
+        },
+        {
+          "name": "email",
+          "dtype": "string",
+          "required": false,
+          "description": "Invoice email.",
+          "examples": [
+            "customer@example.com"
+          ]
+        }
+      ]
+    }
+  ]
+}
