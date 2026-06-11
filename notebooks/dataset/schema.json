@@ -1,0 +1,104 @@
+{
+  "domain": "E-commerce Order Assistant",
+  "intents": [
+    "order_status",
+    "delivery_delay",
+    "cancel_order",
+    "refund_status",
+    "return_item",
+    "payment_issue",
+    "modify_order",
+    "product_availability",
+    "complaint_registration",
+    "exchange_item",
+    "store_locator",
+    "delivery_address_update",
+    "coupon_issue",
+    "subscription_issue",
+    "invoice_request"
+  ],
+  "slot_schema": {
+    "order_status": [
+      "order_id",
+      "phone_last4",
+      "channel"
+    ],
+    "delivery_delay": [
+      "order_id",
+      "expected_delivery_date",
+      "delivery_slot",
+      "city"
+    ],
+    "cancel_order": [
+      "order_id",
+      "cancellation_reason",
+      "products"
+    ],
+    "refund_status": [
+      "refund_id",
+      "order_id",
+      "payment_method"
+    ],
+    "return_item": [
+      "order_id",
+      "products",
+      "return_reason",
+      "pickup_address"
+    ],
+    "payment_issue": [
+      "order_id",
+      "transaction_id",
+      "payment_method",
+      "issue_type"
+    ],
+    "modify_order": [
+      "order_id",
+      "products",
+      "quantity_change",
+      "delivery_slot"
+    ],
+    "product_availability": [
+      "products",
+      "pincode",
+      "store_id"
+    ],
+    "complaint_registration": [
+      "order_id",
+      "complaint_type",
+      "products",
+      "description"
+    ],
+    "exchange_item": [
+      "order_id",
+      "products",
+      "exchange_reason",
+      "preferred_variant"
+    ],
+    "store_locator": [
+      "city",
+      "pincode",
+      "store_type"
+    ],
+    "delivery_address_update": [
+      "order_id",
+      "new_address",
+      "city",
+      "pincode"
+    ],
+    "coupon_issue": [
+      "coupon_code",
+      "order_id",
+      "cart_value"
+    ],
+    "subscription_issue": [
+      "subscription_id",
+      "issue_type",
+      "phone_last4"
+    ],
+    "invoice_request": [
+      "order_id",
+      "invoice_type",
+      "email"
+    ]
+  }
+}

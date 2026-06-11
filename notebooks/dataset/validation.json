@@ -1,0 +1,1367 @@
+[
+  {
+    "sample_id": "SMP0095",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN79194",
+      "order_id": "ORD170193",
+      "payment_method": "debit_card"
+    },
+    "customer_utterance": "I need help with refund status for ORD170193.",
+    "target_text": "I can help with refund status for order ORD170193.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD170193 <sep> payment_method : debit_card <sep> refund_id : RFN79194 [EOS]"
+  },
+  {
+    "sample_id": "SMP0317",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toor dal"
+      ]
+    },
+    "customer_utterance": "I need help with product availability for ['toor dal'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> products : toor dal [EOS]"
+  },
+  {
+    "sample_id": "SMP0184",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD152154",
+      "products": [
+        "paneer",
+        "eggs"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD152154.",
+    "target_text": "I can help with return item for order ORD152154.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD152154 <sep> pickup_address : same as delivery address <sep> products : paneer | eggs <sep> return_reason : wrong item delivered [EOS]"
+  },
+  {
+    "sample_id": "SMP0245",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD859895",
+      "complaint_type": "missing_item",
+      "products": [
+        "t-shirt",
+        "shampoo"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD859895.",
+    "target_text": "I can help with complaint registration for order ORD859895.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : missing_item <sep> description : package was leaking <sep> order_id : ORD859895 <sep> products : t-shirt | shampoo [EOS]"
+  },
+  {
+    "sample_id": "SMP0067",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD640915",
+      "phone_last4": "9569",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD640915.",
+    "target_text": "I can help with order status for order ORD640915.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD640915 <sep> phone_last4 : 9569 [EOS]"
+  },
+  {
+    "sample_id": "SMP0171",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD431577"
+    },
+    "customer_utterance": "I need help with cancel order for ORD431577.",
+    "target_text": "I can help with cancel order for order ORD431577.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> order_id : ORD431577 [EOS]"
+  },
+  {
+    "sample_id": "SMP0120",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD504431",
+      "expected_delivery_date": "2026-06-13",
+      "delivery_slot": "6 AM - 8 AM",
+      "city": "Mumbai"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD504431.",
+    "target_text": "I can help with delivery delay for order ORD504431.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Mumbai <sep> delivery_slot : 6 AM - 8 AM <sep> expected_delivery_date : 2026-06-13 <sep> order_id : ORD504431 [EOS]"
+  },
+  {
+    "sample_id": "SMP0045",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "milk"
+      ],
+      "pincode": "560516",
+      "store_id": "ORD"
+    },
+    "customer_utterance": "I need help with product availability for ['milk'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 560516 <sep> products : milk <sep> store_id : ORD [EOS]"
+  },
+  {
+    "sample_id": "SMP0068",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD524690",
+      "expected_delivery_date": "2026-06-06",
+      "delivery_slot": "10 AM - 12 PM",
+      "city": "Kolkata"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD524690.",
+    "target_text": "I can help with delivery delay for order ORD524690.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Kolkata <sep> delivery_slot : 10 AM - 12 PM <sep> expected_delivery_date : 2026-06-06 <sep> order_id : ORD524690 [EOS]"
+  },
+  {
+    "sample_id": "SMP0400",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD312929",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "detergent",
+        "basmati rice"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD312929.",
+    "target_text": "I can help with cancel order for order ORD312929.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD312929 <sep> products : detergent | basmati rice [EOS]"
+  },
+  {
+    "sample_id": "SMP0141",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD881180",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "basmati rice",
+        "toor dal"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD881180.",
+    "target_text": "I can help with cancel order for order ORD881180.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD881180 <sep> products : basmati rice | toor dal [EOS]"
+  },
+  {
+    "sample_id": "SMP0162",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD",
+      "expected_delivery_date": "2026-06-10",
+      "delivery_slot": "6 PM - 8 PM",
+      "city": "Gurugram",
+      "products": [
+        "baby diapers",
+        "baby diapers"
+      ]
+    },
+    "customer_utterance": "I need help with delivery delay for ORD.",
+    "target_text": "I can help with delivery delay for order ORD.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "invalid_id"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Gurugram <sep> delivery_slot : 6 PM - 8 PM <sep> expected_delivery_date : 2026-06-10 <sep> order_id : ORD <sep> products : baby diapers | baby diapers [EOS]"
+  },
+  {
+    "sample_id": "SMP0345",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD943581",
+      "products": [
+        "milk",
+        "basmati rice"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": ""
+    },
+    "customer_utterance": "I need help with exchange item for ORD943581.",
+    "target_text": "I can help with exchange item for order ORD943581.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD943581 <sep> preferred_variant : [EMPTY] <sep> products : milk | basmati rice [EOS]"
+  },
+  {
+    "sample_id": "SMP0285",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD886891"
+    },
+    "customer_utterance": "I need help with order status for ORD886891.",
+    "target_text": "I can help with order status for order ORD886891.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> order_id : ORD886891 [EOS]"
+  },
+  {
+    "sample_id": "SMP0139",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD276955",
+      "phone_last4": "2343",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD276955.",
+    "target_text": "I can help with order status for order ORD276955.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD276955 <sep> phone_last4 : 2343 [EOS]"
+  },
+  {
+    "sample_id": "SMP0085",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "toothpaste"
+      ],
+      "pincode": "560115",
+      "store_id": "",
+      "ambiguous_reference": "the last order"
+    },
+    "customer_utterance": "Can you help with the last order?",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> ambiguous_reference : the last order <sep> pincode : 560115 <sep> products : toothpaste <sep> store_id : [EMPTY] [EOS]"
+  },
+  {
+    "sample_id": "SMP0393",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD934274",
+      "cart_value": 2860
+    },
+    "customer_utterance": "I need help with coupon issue for ORD934274.",
+    "target_text": "I can help with coupon issue for order ORD934274.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 2860 <sep> coupon_code : FRESH20 <sep> order_id : ORD934274 [EOS]"
+  },
+  {
+    "sample_id": "SMP0305",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD266552",
+      "complaint_type": "late_delivery",
+      "products": [
+        "shampoo",
+        "green tea",
+        "shampoo"
+      ]
+    },
+    "customer_utterance": "I need help with complaint registration for ORD266552.",
+    "target_text": "I can help with complaint registration for order ORD266552.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : late_delivery <sep> order_id : ORD266552 <sep> products : shampoo | green tea | shampoo [EOS]"
+  },
+  {
+    "sample_id": "SMP0154",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD841324",
+      "phone_last4": "9488",
+      "channel": "website"
+    },
+    "customer_utterance": "I need help with order status for ORD841324.",
+    "target_text": "I can help with order status for order ORD841324.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD841324 <sep> phone_last4 : 9488 [EOS]"
+  },
+  {
+    "sample_id": "SMP0320",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD626943",
+      "expected_delivery_date": "2026-06-12"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD626943.",
+    "target_text": "I can help with delivery delay for order ORD626943.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> expected_delivery_date : 2026-06-12 <sep> order_id : ORD626943 [EOS]"
+  },
+  {
+    "sample_id": "SMP0351",
+    "intent": "delivery_address_update",
+    "slots": {
+      "order_id": "ORD857150",
+      "new_address": "Tower B, Prestige Park",
+      "city": "Mumbai",
+      "pincode": "400452",
+      "products": [
+        "potatoes",
+        "potatoes"
+      ]
+    },
+    "customer_utterance": "I need help with delivery address update for ORD857150.",
+    "target_text": "I can help with delivery address update for order ORD857150.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_address_update <sep> city : Mumbai <sep> new_address : Tower B, Prestige Park <sep> order_id : ORD857150 <sep> pincode : 400452 <sep> products : potatoes | potatoes [EOS]"
+  },
+  {
+    "sample_id": "SMP0196",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN14261",
+      "order_id": "ORD308627",
+      "payment_method": "wallet"
+    },
+    "customer_utterance": "I need help with refund status for ORD308627.",
+    "target_text": "I can help with refund status for order ORD308627.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD308627 <sep> payment_method : wallet <sep> refund_id : RFN14261 [EOS]"
+  },
+  {
+    "sample_id": "SMP0330",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD749649",
+      "products": [
+        "toothpaste",
+        "paneer",
+        "potatoes"
+      ],
+      "return_reason": "wrong item delivered",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD749649.",
+    "target_text": "I can help with return item for order ORD749649.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD749649 <sep> pickup_address : same as delivery address <sep> products : toothpaste | paneer | potatoes <sep> return_reason : wrong item delivered [EOS]"
+  },
+  {
+    "sample_id": "SMP0214",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD893420",
+      "phone_last4": "1510",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD893420.",
+    "target_text": "I can help with order status for order ORD893420.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD893420 <sep> phone_last4 : 1510 [EOS]"
+  },
+  {
+    "sample_id": "SMP0064",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD846856",
+      "products": [
+        "curd",
+        "atta",
+        "almonds",
+        "pressure cooker"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address",
+      "ambiguous_reference": "yesterday delivery"
+    },
+    "customer_utterance": "Can you help with yesterday delivery?",
+    "target_text": "I can help with return item for order ORD846856.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> ambiguous_reference : yesterday delivery <sep> order_id : ORD846856 <sep> pickup_address : same as delivery address <sep> products : curd | atta | almonds | pressure cooker <sep> return_reason : expired product [EOS]"
+  },
+  {
+    "sample_id": "SMP0156",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD460214",
+      "products": [
+        "toothpaste",
+        "paneer"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "size L"
+    },
+    "customer_utterance": "I need help with exchange item for ORD460214.",
+    "target_text": "I can help with exchange item for order ORD460214.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : defective item <sep> order_id : ORD460214 <sep> preferred_variant : size L <sep> products : toothpaste | paneer [EOS]"
+  },
+  {
+    "sample_id": "SMP0183",
+    "intent": "invoice_request",
+    "slots": {
+      "order_id": "ORD554093",
+      "invoice_type": "standard",
+      "email": "customer859@example.com"
+    },
+    "customer_utterance": "I need help with invoice request for ORD554093.",
+    "target_text": "I can help with invoice request for order ORD554093.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : invoice_request <sep> email : customer859@example.com <sep> invoice_type : standard <sep> order_id : ORD554093 [EOS]"
+  },
+  {
+    "sample_id": "SMP0089",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD997855",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "toothpaste"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD997855.",
+    "target_text": "I can help with cancel order for order ORD997855.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD997855 <sep> products : toothpaste [EOS]"
+  },
+  {
+    "sample_id": "SMP0333",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD493036",
+      "phone_last4": "",
+      "channel": "app",
+      "ambiguous_reference": "yesterday delivery"
+    },
+    "customer_utterance": "Can you help with yesterday delivery?",
+    "target_text": "I can help with order status for order ORD493036.",
+    "edge_case": true,
+    "edge_case_types": [
+      "empty_value",
+      "ambiguous_request"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> ambiguous_reference : yesterday delivery <sep> channel : app <sep> order_id : ORD493036 <sep> phone_last4 : [EMPTY] [EOS]"
+  },
+  {
+    "sample_id": "SMP0286",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD817591",
+      "phone_last4": "0221",
+      "channel": "app"
+    },
+    "customer_utterance": "I need help with order status for ORD817591.",
+    "target_text": "I can help with order status for order ORD817591.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : app <sep> order_id : ORD817591 <sep> phone_last4 : 0221 [EOS]"
+  },
+  {
+    "sample_id": "SMP0080",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "almonds",
+        "toor dal"
+      ],
+      "pincode": "400914",
+      "store_id": "STR7422"
+    },
+    "customer_utterance": "I need help with product availability for ['almonds', 'toor dal'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 400914 <sep> products : almonds | toor dal <sep> store_id : STR7422 [EOS]"
+  },
+  {
+    "sample_id": "SMP0102",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD389545",
+      "cancellation_reason": "delivery too late",
+      "products": [
+        "milk"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD389545.",
+    "target_text": "I can help with cancel order for order ORD389545.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : delivery too late <sep> order_id : ORD389545 <sep> products : milk [EOS]"
+  },
+  {
+    "sample_id": "SMP0097",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Bengaluru",
+      "pincode": "380891",
+      "store_type": "express_store"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Bengaluru <sep> pincode : 380891 <sep> store_type : express_store [EOS]"
+  },
+  {
+    "sample_id": "SMP0201",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "baby diapers",
+        "almonds"
+      ],
+      "pincode": "110490",
+      "store_id": "STR8273"
+    },
+    "customer_utterance": "I need help with product availability for ['baby diapers', 'almonds'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 110490 <sep> products : baby diapers | almonds <sep> store_id : STR8273 [EOS]"
+  },
+  {
+    "sample_id": "SMP0339",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD354604",
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD354604.",
+    "target_text": "I can help with return item for order ORD354604.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD354604 <sep> pickup_address : same as delivery address <sep> return_reason : damaged item <sep> missing_slots : products [EOS]"
+  },
+  {
+    "sample_id": "SMP0153",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD144681",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "bread",
+        "cooking oil"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD144681.",
+    "target_text": "I can help with cancel order for order ORD144681.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD144681 <sep> products : bread | cooking oil [EOS]"
+  },
+  {
+    "sample_id": "SMP0287",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD237560",
+      "transaction_id": "TXN25081517",
+      "payment_method": "credit_card",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD237560.",
+    "target_text": "I can help with payment issue for order ORD237560.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD237560 <sep> payment_method : credit_card <sep> transaction_id : TXN25081517 [EOS]"
+  },
+  {
+    "sample_id": "SMP0051",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD981559",
+      "products": [
+        "tomatoes",
+        "shampoo"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "1 kg pack"
+    },
+    "customer_utterance": "I need help with exchange item for ORD981559.",
+    "target_text": "I can help with exchange item for order ORD981559.",
+    "edge_case": true,
+    "edge_case_types": [
+      "duplicate_entities",
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD981559 <sep> preferred_variant : 1 kg pack <sep> products : tomatoes | shampoo [EOS]"
+  },
+  {
+    "sample_id": "SMP0114",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD700030",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "bread"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD700030.",
+    "target_text": "I can help with cancel order for order ORD700030.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD700030 <sep> products : bread [EOS]"
+  },
+  {
+    "sample_id": "SMP0195",
+    "intent": "refund_status",
+    "slots": {
+      "refund_id": "RFN13746",
+      "order_id": "ORD816870",
+      "payment_method": "wallet"
+    },
+    "customer_utterance": "I need help with refund status for ORD816870.",
+    "target_text": "I can help with refund status for order ORD816870.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : refund_status <sep> order_id : ORD816870 <sep> payment_method : wallet <sep> refund_id : RFN13746 [EOS]"
+  },
+  {
+    "sample_id": "SMP0170",
+    "intent": "subscription_issue",
+    "slots": {
+      "subscription_id": "SUB69361",
+      "issue_type": "benefit_not_applied",
+      "phone_last4": "3211"
+    },
+    "customer_utterance": "I need help with subscription issue for my account.",
+    "target_text": "I can help with subscription issue. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : subscription_issue <sep> issue_type : benefit_not_applied <sep> phone_last4 : 3211 <sep> subscription_id : SUB69361 [EOS]"
+  },
+  {
+    "sample_id": "SMP0281",
+    "intent": "payment_issue",
+    "slots": {
+      "order_id": "ORD382879",
+      "transaction_id": "TXN79886405",
+      "payment_method": "debit_card",
+      "issue_type": "charged_but_order_not_placed"
+    },
+    "customer_utterance": "I need help with payment issue for ORD382879.",
+    "target_text": "I can help with payment issue for order ORD382879.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : payment_issue <sep> issue_type : charged_but_order_not_placed <sep> order_id : ORD382879 <sep> payment_method : debit_card <sep> transaction_id : TXN79886405 [EOS]"
+  },
+  {
+    "sample_id": "SMP0298",
+    "intent": "store_locator",
+    "slots": {
+      "city": "Delhi",
+      "pincode": "110916",
+      "store_type": "pickup_point"
+    },
+    "customer_utterance": "I need help with store locator for my account.",
+    "target_text": "I can help with store locator. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : store_locator <sep> city : Delhi <sep> pincode : 110916 <sep> store_type : pickup_point [EOS]"
+  },
+  {
+    "sample_id": "SMP0127",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD814563",
+      "phone_last4": "2703",
+      "channel": "store",
+      "ambiguous_reference": "the last order",
+      "products": [
+        "eggs",
+        "tomatoes",
+        "eggs"
+      ]
+    },
+    "customer_utterance": "Can you help with the last order?",
+    "target_text": "I can help with order status for order ORD814563.",
+    "edge_case": true,
+    "edge_case_types": [
+      "ambiguous_request",
+      "duplicate_entities"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> ambiguous_reference : the last order <sep> channel : store <sep> order_id : ORD814563 <sep> phone_last4 : 2703 <sep> products : eggs | tomatoes | eggs [EOS]"
+  },
+  {
+    "sample_id": "SMP0046",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD162548",
+      "complaint_type": "poor_quality"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD162548.",
+    "target_text": "I can help with complaint registration for order ORD162548.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products",
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : poor_quality <sep> order_id : ORD162548 [EOS]"
+  },
+  {
+    "sample_id": "SMP0294",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD678272",
+      "products": [
+        "tomatoes",
+        "paneer"
+      ],
+      "return_reason": "expired product",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD678272.",
+    "target_text": "I can help with return item for order ORD678272.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD678272 <sep> pickup_address : same as delivery address <sep> products : tomatoes | paneer <sep> return_reason : expired product [EOS]"
+  },
+  {
+    "sample_id": "SMP0039",
+    "intent": "return_item",
+    "slots": {
+      "products": [
+        "toor dal",
+        "bread",
+        "pressure cooker"
+      ],
+      "return_reason": null,
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ['toor dal', 'bread', 'pressure cooker'].",
+    "target_text": "I can help with return item. Please share the missing details for verification.",
+    "edge_case": true,
+    "edge_case_types": [
+      "null_value",
+      "missing_required_slot"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> pickup_address : same as delivery address <sep> products : toor dal | bread | pressure cooker <sep> return_reason : [NULL] <sep> missing_slots : order_id [EOS]"
+  },
+  {
+    "sample_id": "SMP0084",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD444181",
+      "phone_last4": "5880",
+      "channel": "call_center",
+      "products": [
+        "cooking oil",
+        "baby diapers",
+        "atta"
+      ]
+    },
+    "customer_utterance": "I need help with order status for ORD444181.",
+    "target_text": "I can help with order status for order ORD444181.",
+    "edge_case": true,
+    "edge_case_types": [
+      "multiple_products"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : call_center <sep> order_id : ORD444181 <sep> phone_last4 : 5880 <sep> products : cooking oil | baby diapers | atta [EOS]"
+  },
+  {
+    "sample_id": "SMP0386",
+    "intent": "coupon_issue",
+    "slots": {
+      "coupon_code": "FRESH20",
+      "order_id": "ORD406634",
+      "cart_value": 1288
+    },
+    "customer_utterance": "I need help with coupon issue for ORD406634.",
+    "target_text": "I can help with coupon issue for order ORD406634.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : coupon_issue <sep> cart_value : 1288 <sep> coupon_code : FRESH20 <sep> order_id : ORD406634 [EOS]"
+  },
+  {
+    "sample_id": "SMP0003",
+    "intent": "product_availability",
+    "slots": {
+      "products": [
+        "curd",
+        "cooking oil",
+        "detergent"
+      ],
+      "pincode": "380972",
+      "store_id": "STR3532"
+    },
+    "customer_utterance": "I need help with product availability for ['curd', 'cooking oil', 'detergent'].",
+    "target_text": "I can help with product availability. Please share the missing details for verification.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : product_availability <sep> pincode : 380972 <sep> products : curd | cooking oil | detergent <sep> store_id : STR3532 [EOS]"
+  },
+  {
+    "sample_id": "SMP0359",
+    "intent": "delivery_delay",
+    "slots": {
+      "order_id": "ORD749745",
+      "expected_delivery_date": "2026-06-07",
+      "delivery_slot": "2 PM - 4 PM",
+      "city": "Delhi"
+    },
+    "customer_utterance": "I need help with delivery delay for ORD749745.",
+    "target_text": "I can help with delivery delay for order ORD749745.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : delivery_delay <sep> city : Delhi <sep> delivery_slot : 2 PM - 4 PM <sep> expected_delivery_date : 2026-06-07 <sep> order_id : ORD749745 [EOS]"
+  },
+  {
+    "sample_id": "SMP0150",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD600266",
+      "products": [
+        "paneer",
+        "eggs",
+        "potatoes"
+      ]
+    },
+    "customer_utterance": "I need help with return item for ORD600266.",
+    "target_text": "I can help with return item for order ORD600266.",
+    "edge_case": true,
+    "edge_case_types": [
+      "partial_information"
+    ],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD600266 <sep> products : paneer | eggs | potatoes [EOS]"
+  },
+  {
+    "sample_id": "SMP0031",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD360125",
+      "phone_last4": "0377",
+      "channel": "store"
+    },
+    "customer_utterance": "I need help with order status for ORD360125.",
+    "target_text": "I can help with order status for order ORD360125.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : store <sep> order_id : ORD360125 <sep> phone_last4 : 0377 [EOS]"
+  },
+  {
+    "sample_id": "SMP0297",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD865760",
+      "products": [
+        "cooking oil"
+      ],
+      "exchange_reason": "defective item",
+      "preferred_variant": "red color"
+    },
+    "customer_utterance": "I need help with exchange item for ORD865760.",
+    "target_text": "I can help with exchange item for order ORD865760.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : defective item <sep> order_id : ORD865760 <sep> preferred_variant : red color <sep> products : cooking oil [EOS]"
+  },
+  {
+    "sample_id": "SMP0025",
+    "intent": "order_status",
+    "slots": {
+      "order_id": "ORD764613",
+      "phone_last4": "0013",
+      "channel": "website"
+    },
+    "customer_utterance": "I need help with order status for ORD764613.",
+    "target_text": "I can help with order status for order ORD764613.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : order_status <sep> channel : website <sep> order_id : ORD764613 <sep> phone_last4 : 0013 [EOS]"
+  },
+  {
+    "sample_id": "SMP0218",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD482838",
+      "cancellation_reason": "ordered by mistake",
+      "products": [
+        "potatoes",
+        "toothpaste"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD482838.",
+    "target_text": "I can help with cancel order for order ORD482838.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : ordered by mistake <sep> order_id : ORD482838 <sep> products : potatoes | toothpaste [EOS]"
+  },
+  {
+    "sample_id": "SMP0048",
+    "intent": "cancel_order",
+    "slots": {
+      "order_id": "ORD204178",
+      "cancellation_reason": "duplicate order",
+      "products": [
+        "potatoes"
+      ]
+    },
+    "customer_utterance": "I need help with cancel order for ORD204178.",
+    "target_text": "I can help with cancel order for order ORD204178.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : cancel_order <sep> cancellation_reason : duplicate order <sep> order_id : ORD204178 <sep> products : potatoes [EOS]"
+  },
+  {
+    "sample_id": "SMP0247",
+    "intent": "return_item",
+    "slots": {
+      "order_id": "ORD860590",
+      "products": [
+        "apples",
+        "t-shirt"
+      ],
+      "return_reason": "damaged item",
+      "pickup_address": "same as delivery address"
+    },
+    "customer_utterance": "I need help with return item for ORD860590.",
+    "target_text": "I can help with return item for order ORD860590.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : return_item <sep> order_id : ORD860590 <sep> pickup_address : same as delivery address <sep> products : apples | t-shirt <sep> return_reason : damaged item [EOS]"
+  },
+  {
+    "sample_id": "SMP0316",
+    "intent": "exchange_item",
+    "slots": {
+      "order_id": "ORD756934",
+      "products": [
+        "eggs"
+      ],
+      "exchange_reason": "wrong color",
+      "preferred_variant": "1 kg pack"
+    },
+    "customer_utterance": "I need help with exchange item for ORD756934.",
+    "target_text": "I can help with exchange item for order ORD756934.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : exchange_item <sep> exchange_reason : wrong color <sep> order_id : ORD756934 <sep> preferred_variant : 1 kg pack <sep> products : eggs [EOS]"
+  },
+  {
+    "sample_id": "SMP0098",
+    "intent": "complaint_registration",
+    "slots": {
+      "order_id": "ORD184357",
+      "complaint_type": "poor_quality",
+      "products": [
+        "toothpaste",
+        "apples"
+      ],
+      "description": "package was leaking"
+    },
+    "customer_utterance": "I need help with complaint registration for ORD184357.",
+    "target_text": "I can help with complaint registration for order ORD184357.",
+    "edge_case": false,
+    "edge_case_types": [],
+    "metadata": {
+      "domain": "retail_delivery_customer_service",
+      "schema_version": "1.0",
+      "seed": 20260605,
+      "split": "validation"
+    },
+    "linearized_sequence": "[BOS] intent : complaint_registration <sep> complaint_type : poor_quality <sep> description : package was leaking <sep> order_id : ORD184357 <sep> products : toothpaste | apples [EOS]"
+  }
+]
